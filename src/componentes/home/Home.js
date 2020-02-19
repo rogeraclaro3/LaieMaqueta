@@ -7,6 +7,9 @@ import NovetatsLlibre from './novetats-llibre/NovetatsLlibre';
 import NovetatsGrans from './novetats/NovetatsGrans';
 import Regala from './regala/Regala';
 import Targeta from './targeta/Targeta';
+import Activitats from './activitats/Activitats';
+import Magazine from './magazine/Magazine';
+import Newsletter from './newsletter/Newsletter';
 import Footer from '../footer/Footer';
 
 class Home extends React.Component {
@@ -24,6 +27,9 @@ class Home extends React.Component {
 									<NovetatsGrans />
 									<Regala />
 									<Targeta />
+									<Activitats />
+									<Magazine />
+									<Newsletter />
 									<hr className="featurette-divider" />
 		            </div>
 	  		</main>
