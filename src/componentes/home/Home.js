@@ -1,8 +1,12 @@
 import React from 'react';
 import Menu from '../menu/Menu';
 import Slider from './slider/Slider';
+import RecomanatsLlibre from './recomanats-llibre/RecomanatsLlibre';
 import RecomanatsGrans from './recomanats/RecomanatsGrans';
-//import Servicios from './servicios/Servicios';
+import NovetatsLlibre from './novetats-llibre/NovetatsLlibre';
+import NovetatsGrans from './novetats/NovetatsGrans';
+import Regala from './regala/Regala';
+import Targeta from './targeta/Targeta';
 import Footer from '../footer/Footer';
 
 class Home extends React.Component {
@@ -12,10 +16,15 @@ class Home extends React.Component {
 			<Menu />
 			<main role="main" className="flex-shrink-0 inici-home">
 		            <div className="container-fluid">
-		  	        <Slider />
-		  	        {/* <Servicios /> */}
-								<RecomanatsGrans />
-		  	        <hr className="featurette-divider" />
+									<Slider />
+									{/* <Servicios /> */}
+									<RecomanatsLlibre />
+									<RecomanatsGrans />
+									<NovetatsLlibre />
+									<NovetatsGrans />
+									<Regala />
+									<Targeta />
+									<hr className="featurette-divider" />
 		            </div>
 	  		</main>
 	  		<Footer />

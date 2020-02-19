@@ -25,7 +25,7 @@ class Recomanats_grans extends React.Component {
                 <div className="col-lg-6">
 									<Card className="recom_card fonsgroc" style = {fonsCard01}>
 										<Card.Body>
-											<Card.Subtitle className="mb-2 text-muted">Recomanats infantils</Card.Subtitle>
+											<Card.Subtitle className="mb-2">Recomanats infantils</Card.Subtitle>
 											<Card.Title>Pre-lectures</Card.Title>
 											<Card.Text>
 												22,90&euro;
@@ -38,7 +38,7 @@ class Recomanats_grans extends React.Component {
 								<div className="col-lg-6">
 									<Card className="recom_card fonsblau" style={fonsCard02}>
 										<Card.Body>
-											<Card.Subtitle className="mb-2 text-muted">
+											<Card.Subtitle className="mb-2">
 												Reserva el teu exemplar
 											</Card.Subtitle>
 											<Card.Title>Decantaciones Kantianas</Card.Title>
