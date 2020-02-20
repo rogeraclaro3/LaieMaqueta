@@ -290,9 +290,14 @@ li.dropdown {
   text-align: center;
 }
 
-@media (min-width: 1000px) {
-  .main-nav a {
-    max-width: 500px;
-    font-size: 14px;
-  }
+.form-control {
+  display: inline-block;
+  width: 40%;
 }
+
+  @media (min-width: 1000px) {
+    .main-nav a {
+      max-width: 500px;
+      font-size: 14px;
+    }
+  }
