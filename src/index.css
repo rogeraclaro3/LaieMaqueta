@@ -1,10 +1,34 @@
+@font-face {
+  font-family: 'Poppins Extralight';
+  src: local('Poppins'), url(./fonts/Poppins-ExtraLight.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: local('Poppins'), url(./fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Medium';
+  src: local('Poppins'), url(./fonts/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: local('Poppins'), url(./fonts/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Black';
+  src: local('Poppins'), url(./fonts/Poppins-Black.ttf) format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins Regular', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #002343;
 }
 
 code {
@@ -28,10 +52,29 @@ header {
   height: 88px;
 }
 
+h4 {
+  font-family: 'Poppins Medium', sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+h4 a {
+  font-family: 'Poppins Bold', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #002343;
+}
+
 .main-nav {
   max-width: 1064px;
   margin: 0 auto;
   height: inherit;
+}
+
+.main-nav a {
+  font-family: 'Poppins Regular' !important;
+  font-size: 14px !important;
 }
 
 .main-nav ul {
@@ -170,9 +213,10 @@ li.dropdown {
 
 .regala_card_llibre {
   display: inline-block;
-  -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
+  min-width: 100%;
 }
 
 .regala_card_llibre .card-text {
@@ -194,6 +238,8 @@ li.dropdown {
   background-color: #f49331;
   border-color: #f49331;
   width: 100%;
+  font-family: 'Poppins Black';
+  font-size: 14px;
 }
 
 .regala_card_llibre.card img.card-img-top {
@@ -207,9 +253,9 @@ li.dropdown {
 .recom_card_llibre {
   display: inline-block;
   width: 180px;
-  -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
 }
 
 .recom_card_llibre .card-text {
@@ -221,6 +267,8 @@ li.dropdown {
   background-color: #f49331;
   border-color: #f49331;
   width: 100%;
+  font-family: 'Poppins Black';
+  font-size: 14px;
 }
 
 .slick-slider {
@@ -260,9 +308,9 @@ li.dropdown {
 .recom_card {
   /*width: 90%;*/
   height: 375px;
-  -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
   background-position: bottom 20px right 20px;
   background-repeat: no-repeat;
 }
@@ -294,6 +342,82 @@ li.dropdown {
   display: inline-block !important;
   width: 40% !important;
 }
+
+.body_recom.card-body {
+    padding: 2rem;
+}
+
+.recom_card .btn-primary {
+    background-color: #f49331;
+    border-color: #f49331;
+    width: 140px;
+    font-family: 'Poppins Black';
+    font-size: 14px;
+}
+
+.titol_recom.card-title.h5 {
+  font-family: 'Poppins Bold';
+  font-size: 24px;
+  text-transform: none;
+}
+
+.card-title.h5 {
+  font-family: 'Poppins Black';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.recom_card .card-subtitle.h6 {
+  margin-top: 25px;
+  font-family: 'Poppins Extralight';
+  font-size: 16px;
+}
+
+.card-subtitle.h6 {
+  font-family: 'Poppins Extralight';
+  font-size: 12px;
+}
+
+.card-text {
+  font-family: 'Poppins Extralight';
+  font-size: 16px;
+}
+
+.preu_recom.card-text {
+  margin-top: 60px;
+  color: #f49331;
+}
+
+.btn-primary:hover {
+    color: #002324;
+}
+
+.titol_deco1, .titol_deco2 {
+  font-size: 48px;
+}
+
+.titol_deco1 {
+  font-family: 'Poppins Extralight';
+}
+
+.titol_deco2 {
+  font-family: 'Poppins Bold';
+}
+
+.text .negreta {
+  font-family: 'Poppins Bold';
+  font-size: 16px;
+}
+
+.text .normal {
+  font-family: 'Poppins Extralight';
+  font-size: 16px;
+  line-height: 18px;
+}
+
+
+
+
 
   @media (min-width: 1000px) {
     .main-nav a {
