@@ -18,20 +18,19 @@ class Home extends React.Component {
 			<>
 			<Menu />
 			<main role="main" className="flex-shrink-0 inici-home">
-		            <div className="container-fluid">
-									<Slider />
-									{/* <Servicios /> */}
-									<RecomanatsLlibre />
-									<RecomanatsGrans />
-									<NovetatsLlibre />
-									<NovetatsGrans />
-									<Regala />
-									<Targeta />
-									<Activitats />
-									<Magazine />
-									<Newsletter />
-									<hr className="featurette-divider" />
-		            </div>
+				<div className="container-fluid">
+					<Slider />
+					<RecomanatsLlibre />
+					<RecomanatsGrans />
+					<NovetatsLlibre />
+					<NovetatsGrans />
+					<Regala />
+					<Targeta />
+					<Activitats />
+					<Magazine />
+					<Newsletter />
+					<hr className="featurette-divider" />
+				</div>
 	  		</main>
 	  		<Footer />
 	  		</>

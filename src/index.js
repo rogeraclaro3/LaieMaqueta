@@ -1,5 +1,10 @@
 import React from 'react';
 import { render } from 'react-snapshot';
+import './fonts/Poppins-ExtraLight.ttf';
+import './fonts/Poppins-Regular.ttf';
+import './fonts/Poppins-Medium.ttf';
+import './fonts/Poppins-Bold.ttf';
+import './fonts/Poppins-Black.ttf';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
