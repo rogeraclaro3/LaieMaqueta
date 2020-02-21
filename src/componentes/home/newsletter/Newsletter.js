@@ -1,5 +1,4 @@
 import React from 'react';
-import FotoTarja from './tarja.png';
 
 class Tarjeta extends React.Component {
 

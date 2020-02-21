@@ -291,8 +291,8 @@ li.dropdown {
 }
 
 .form-control {
-  display: inline-block;
-  width: 40%;
+  display: inline-block !important;
+  width: 40% !important;
 }
 
   @media (min-width: 1000px) {
