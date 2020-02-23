@@ -16,7 +16,7 @@ class Tarjeta extends React.Component {
 						</div>
 						<form className="row mb-5">
 							<div className="col-lg-12 centrat">
-								<input type="email" className="form-control" id="Email" value="Email" required /><button type="submit" className="btn btn-primary">Enviar</button>
+								<input type="email" className="form-control" id="Email" value="e-mail" required /><button type="submit" className="btn btn-primary boto-nwsltr">Envia</button>
 							</div>
 						</form>
 					</div>

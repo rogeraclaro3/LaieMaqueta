@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import FotoActivitat01 from './activitat01.jpg';
 import FotoActivitat02 from './activitat02.jpg';
+import Icona from '../icon01.png';
 
 class Activitats extends React.Component {
 
@@ -44,7 +45,7 @@ class Activitats extends React.Component {
     return (
         <div className="container separav60">
         <div className="row">
-					 <div className="col-lg-6"><h4>Activitats i presentacions a Laie</h4></div>
+					<div className="col-lg-6"><img src={Icona} className="icona-align" alt="icona" /><h4>Activitats i presentacions a Laie</h4></div>
 					 <div className="col-lg-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
 				</div>
 				<Slider {...settings}>

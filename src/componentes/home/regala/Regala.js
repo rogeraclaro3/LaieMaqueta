@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import FotoRegala01 from './regala01.jpg';
 import FotoRegala02 from './regala02.jpg';
+import Icona from '../icon02.png';
 
 class Regala extends React.Component {
 
@@ -11,10 +12,8 @@ class Regala extends React.Component {
 
         <div className="container separav60 separab60">
 						<div className="row">
-							<div className="col-lg-6"><h4>Regala millor amb Laie</h4></div>
-							<div className="col-lg-6 text-right">
-								<h4><a href="#">Veure'ls tots</a></h4>
-							</div>
+							<div className="col-lg-6"><img src={Icona} className="icona-align" alt="icona" /><h4>Regala millor amb Laie</h4></div>
+							<div className="col-lg-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
 						</div>
             <div className="row">
                 <div className="col-lg-3">

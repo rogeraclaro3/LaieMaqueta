@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import FotollibreRecomanatGran01 from './llibre01.jpg';
+import Icona from '../icon01.png';
 
 class Recomanats_llibreries extends React.Component {
 
@@ -44,8 +45,8 @@ class Recomanats_llibreries extends React.Component {
     return (
         <div className="container separav60">
         <div className="row">
-					 <div className="col-lg-6"><h4>Els llibreters de Laie recomanen</h4></div>
-					 <div className="col-lg-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
+					<div className="col-lg-6"><img src={Icona} className="icona-align" alt="icona"/><h4>Els llibreters de Laie recomanen</h4></div>
+					<div className="col-lg-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
 				</div>
         <Slider {...settings}>
           <div>

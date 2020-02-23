@@ -56,6 +56,7 @@ h4 {
   font-family: 'Poppins Medium', sans-serif;
   font-size: 28px;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 h4 a {
@@ -344,15 +345,15 @@ li.dropdown {
 }
 
 .body_recom.card-body {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .recom_card .btn-primary {
-    background-color: #f49331;
-    border-color: #f49331;
-    width: 140px;
-    font-family: 'Poppins Black';
-    font-size: 14px;
+  background-color: #f49331;
+  border-color: #f49331;
+  width: 140px;
+  font-family: 'Poppins Black';
+  font-size: 14px;
 }
 
 .titol_recom.card-title.h5 {
@@ -389,10 +390,11 @@ li.dropdown {
 }
 
 .btn-primary:hover {
-    color: #002324;
+  color: #002324;
 }
 
-.titol_deco1, .titol_deco2 {
+.titol_deco1,
+.titol_deco2 {
   font-size: 48px;
 }
 
@@ -415,13 +417,41 @@ li.dropdown {
   line-height: 18px;
 }
 
+.icona-align {
+  vertical-align: middle;
+  margin-bottom: 0.4em;
+  margin-right: 1em;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 25px);
+  padding: .375rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0px solid #ced4da;
+  border-radius: 0rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.boto-nwsltr {
+  background-color: #002343;
+  height: 62px;
+  vertical-align: unset;
+  border: 0px solid transparent;
+  border-radius: 0rem;
+  padding: .375rem 4.75rem;
+}
 
 
-
-
-  @media (min-width: 1000px) {
-    .main-nav a {
-      max-width: 500px;
-      font-size: 14px;
-    }
+@media (min-width: 1000px) {
+  .main-nav a {
+    max-width: 500px;
+    font-size: 14px;
   }
+}
