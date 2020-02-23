@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Tarjeta extends React.Component {
+class Newsletter extends React.Component {
 
   render() {
     return (
@@ -25,4 +25,4 @@ class Tarjeta extends React.Component {
   }
 }
 
-export default Tarjeta;
+export default Newsletter;
