@@ -10,6 +10,7 @@ import Targeta from './targeta/Targeta';
 import Activitats from './activitats/Activitats';
 import Magazine from './magazine/Magazine';
 import Newsletter from './newsletter/Newsletter';
+import Menubottom from '../menubottom/Menubottom';
 import Footer from '../footer/Footer';
 
 class Home extends React.Component {
@@ -29,7 +30,7 @@ class Home extends React.Component {
 					<Activitats />
 					<Magazine />
 					<Newsletter />
-					<hr className="featurette-divider" />
+					<Menubottom />
 				</div>
 	  		</main>
 	  		<Footer />

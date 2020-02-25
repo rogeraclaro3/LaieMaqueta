@@ -46,79 +46,67 @@ class Activitats extends React.Component {
         <div className="container separav60">
         <div className="row">
 					<div className="col-lg-6"><img src={Icona} className="icona-align" alt="icona" /><h4>Activitats i presentacions a Laie</h4></div>
-					 <div className="col-lg-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
+					<div className="col-lg-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
 				</div>
 				<Slider {...settings}>
 
 					<div className="separah15">
             <Card className="regala_card_llibre">
 							<Card.Img variant="top" src={FotoActivitat01} />
-							<Card.Body>
-								<Card.Text className="text_petit">
-									<p>Curs | 19/02/2020</p>
-									<p className="text_exp">Presentació de El universo mental, de Francesc Vieta i Mercè Fèrriz</p>
-									<p>Tarannà Edicions i Laie us conviden a la presentació de: El universo mental, de Francesc Vieta i Mercè Fèrriz</p>
-								</Card.Text>
+							<Card.Body className="text_petit">
+								<Card.Text>Curs | 19/02/2020</Card.Text>
+								<Card.Text className="text_exp">Presentació de El universo mental, de Francesc Vieta i Mercè Fèrriz</Card.Text>
+								<Card.Text>Tarannà Edicions i Laie us conviden a la presentació de: El universo mental, de Francesc Vieta i Mercè Fèrriz</Card.Text>
 							</Card.Body>
 						</Card>
 					</div>
 					<div className="separah15">
 						<Card className="regala_card_llibre">
 							<Card.Img variant="top" src={FotoActivitat01} />
-							<Card.Body>
-								<Card.Text className="text_petit">
-									<p>Curs | 19/02/2020</p>
-									<p className="text_exp">Presentació de El universo mental, de Francesc Vieta i Mercè Fèrriz</p>
-									<p>Tarannà Edicions i Laie us conviden a la presentació de: El universo mental, de Francesc Vieta i Mercè Fèrriz</p>
-								</Card.Text>
+							<Card.Body className="text_petit">
+								<Card.Text>Curs | 19/02/2020</Card.Text>
+								<Card.Text className="text_exp">Presentació de El universo mental, de Francesc Vieta i Mercè Fèrriz</Card.Text>
+								<Card.Text>Tarannà Edicions i Laie us conviden a la presentació de: El universo mental, de Francesc Vieta i Mercè Fèrriz</Card.Text>
 							</Card.Body>
 						</Card>
 					</div>
 					<div className="separah15">
 						<Card className="regala_card_llibre">
 							<Card.Img variant="top" src={FotoActivitat02} />
-							<Card.Body>
-								<Card.Text className="text_petit">
-									<p>Curs | 19/02/2020</p>
-									<p className="text_exp">Presentació de El universo mental, de Francesc Vieta i Mercè Fèrriz</p>
-									<p>Tarannà Edicions i Laie us conviden a la presentació de: El universo mental, de Francesc Vieta i Mercè Fèrriz</p>
-								</Card.Text>
+							<Card.Body className="text_petit">
+								<Card.Text>Curs | 19/02/2020</Card.Text>
+								<Card.Text className="text_exp">Presentació de El universo mental, de Francesc Vieta i Mercè Fèrriz</Card.Text>
+								<Card.Text>Tarannà Edicions i Laie us conviden a la presentació de: El universo mental, de Francesc Vieta i Mercè Fèrriz</Card.Text>
 							</Card.Body>
 						</Card>
 					</div>
 					<div className="separah15">
 						<Card className="regala_card_llibre">
 							<Card.Img variant="top" src={FotoActivitat01} />
-							<Card.Body>
-								<Card.Text className="text_petit">
-									<p>Curs | 19/02/2020</p>
-									<p className="text_exp">Presentació de El universo mental, de Francesc Vieta i Mercè Fèrriz</p>
-									<p>Tarannà Edicions i Laie us conviden a la presentació de: El universo mental, de Francesc Vieta i Mercè Fèrriz</p>
-								</Card.Text>
+							<Card.Body className="text_petit">
+								<Card.Text>Curs | 19/02/2020</Card.Text>
+								<Card.Text className="text_exp">Presentació de El universo mental, de Francesc Vieta i Mercè Fèrriz</Card.Text>
+								<Card.Text>Tarannà Edicions i Laie us conviden a la presentació de: El universo mental, de Francesc Vieta i Mercè Fèrriz</Card.Text>
 							</Card.Body>
 						</Card>
 					</div>
 					<div className="separah15">
 						<Card className="regala_card_llibre">
 							<Card.Img variant="top" src={FotoActivitat02} />
-							<Card.Body>
-								<Card.Text className="text_petit">
-									<p>Curs | 19/02/2020</p>
-									<p className="text_exp">Presentació de El universo mental, de Francesc Vieta i Mercè Fèrriz</p>
-									<p>Tarannà Edicions i Laie us conviden a la presentació de: El universo mental, de Francesc Vieta i Mercè Fèrriz</p>
-								</Card.Text>
+							<Card.Body className="text_petit">
+								<Card.Text>Curs | 19/02/2020</Card.Text>
+								<Card.Text className="text_exp">Presentació de El universo mental, de Francesc Vieta i Mercè Fèrriz</Card.Text>
+								<Card.Text>Tarannà Edicions i Laie us conviden a la presentació de: El universo mental, de Francesc Vieta i Mercè Fèrriz</Card.Text>
 							</Card.Body>
 						</Card>
 					</div>
 					<div className="separah15">
 						<Card className="regala_card_llibre">
 							<Card.Img variant="top" src={FotoActivitat02} />
-							<Card.Body>
-								<Card.Text className="text_petit">
-									<p>Curs | 19/02/2020</p>
-									<p className="text_exp">Presentació de El universo mental, de Francesc Vieta i Mercè Fèrriz</p>
-									<p>Tarannà Edicions i Laie us conviden a la presentació de: El universo mental, de Francesc Vieta i Mercè Fèrriz</p>
-								</Card.Text>
+							<Card.Body className="text_petit">
+								<Card.Text>Curs | 19/02/2020</Card.Text>
+								<Card.Text className="text_exp">Presentació de El universo mental, de Francesc Vieta i Mercè Fèrriz</Card.Text>
+								<Card.Text>Tarannà Edicions i Laie us conviden a la presentació de: El universo mental, de Francesc Vieta i Mercè Fèrriz</Card.Text>
 							</Card.Body>
 						</Card>
 					</div>

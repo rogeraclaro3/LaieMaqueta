@@ -68,7 +68,7 @@ h4 a {
 }
 
 .main-nav {
-  max-width: 1064px;
+  max-width: 1080px;
   margin: 0 auto;
   height: inherit;
 }
@@ -122,6 +122,10 @@ h4 a {
   height: 100%;
 }
 
+.top-nav-logo a {
+  padding-left: 0;
+}
+
 li.dropdown {
   display: inline-block;
 }
@@ -160,7 +164,7 @@ li.dropdown {
 }
 
 .inici-home {
-  margin-top: 88px;
+  margin-top: 66px;
 }
 
 .container-fluid {
@@ -208,6 +212,10 @@ li.dropdown {
   padding: 0 15px 0 15px;
 }
 
+.separab200 {
+  margin-bottom: 200px;
+}
+
 .slick-slide {
   text-align: -webkit-center !important;
 }
@@ -225,14 +233,15 @@ li.dropdown {
   color: #f49331;
 }
 
-.regala_card_llibre .text_petit {
+.regala_card_llibre .text_petit.card-body .card-text {
   text-align: left;
   color: #000;
-  font-size: 12px;
+  font-size: 14px;
 }
 
-.regala_card_llibre .text_petit .text_exp {
+.regala_card_llibre .text_petit.card-body .text_exp.card-text {
   font-size: 14px;
+  font-family: 'Poppins Bold';
 }
 
 .regala_card_llibre .btn-primary {
@@ -330,7 +339,17 @@ li.dropdown {
 
 .titol {
   font-size: 32px;
+  text-transform: uppercase;
   display: block;
+}
+
+.subscriu-fons {
+  background-color: #f8f9fb;
+}
+
+.subscriu-fons .text p {
+  width: 40%;
+  margin: 10px auto 40px auto;
 }
 
 .text {}
@@ -443,6 +462,198 @@ li.dropdown {
   padding: .375rem 4.75rem;
 }
 
+
+/*** footer blau ***/
+.bg-blue {
+  padding: 3rem 0;
+  background-color: #002343;
+}
+
+.brand {
+  margin-top: 8rem;
+  margin-bottom: -6.7rem;
+}
+
+.more-sites {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Poppins Extralight';
+}
+
+.more-sites.half a {
+  float: left;
+  width: 48%;
+}
+
+.more-sites a {
+  color: #fff;
+  display: block;
+  line-height: 24px;
+}
+
+img.Logopeu {
+  width: 280px;
+}
+
+.share {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.5rem 0 0;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+ul.share li:first-child {
+  padding-left: 0;
+}
+
+ul.share li {
+  display: inline;
+  padding-left: 1.5rem;
+}
+
+ul.share li a {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+/**** Fi footer blau ****/
+
+/**** Cercador ****/
+
+.form-control-cerca {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid;
+  height: 30px;
+
+  font-size: 12px;
+}
+
+input.bcerca {
+  width: 17px;
+  height: 17px;
+  margin-left: -17px;
+}
+
+.header-bottom {
+  background-color: rgba(254, 254, 254, 1);
+}
+
+.header-bottom .wrap {
+  padding-top: 1rem;
+  padding-bottom: 1em;
+}
+
+.header-bottom .wrap .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-left: 15px;
+}
+
+ul.options {
+  list-style: none;
+}
+
+.header-bottom .wrap .options>.item:first-child {
+  width: 55%;
+}
+
+.header-bottom .wrap .options>.item:nth-child(2) {
+  width: 25%;
+}
+
+
+.header-bottom .wrap .options>.item .search .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header-bottom .wrap .options>.item .search .form .f1 {
+  border: .1rem solid #ccc;
+  padding: .2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  margin: 0 1.5rem 0 0;
+}
+
+.header-bottom .wrap .options>.item .btn-cart .number {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #f49331;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5rem;
+  display: block;
+  position: relative;
+  top: -2.3rem;
+  right: -0.8rem;
+}
+
+a.bCercaAv {
+  background-color: #002343;
+  color: #fff;
+  padding: 4px 14px 4px 12px;
+  border-radius: .25rem;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.btn.menu {
+  font-size: 1.5rem;
+  margin-top: -12px;
+}
+
+.sel-idiomes {
+  padding-left: 12px;
+  color: #002343;
+}
+
+/**** Fi Cercador ****/
+
+footer {
+  padding: 40px 0 15px 0;
+}
+
+.logosfooter {
+  margin-top: -8px;
+}
 
 @media (min-width: 1000px) {
   .main-nav a {
