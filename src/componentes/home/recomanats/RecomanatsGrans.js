@@ -1,5 +1,4 @@
 import React from 'react';
-//import './Slider.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import FotollibreRecomanatGran01 from './llibre01.jpg';

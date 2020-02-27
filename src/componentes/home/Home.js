@@ -32,9 +32,9 @@ class Home extends React.Component {
 					<Newsletter />
 					<Menubottom />
 				</div>
-	  		</main>
-	  		<Footer />
-	  		</>
+	  	</main>
+	  	<Footer />
+	  	</>
 		)
 	}
 }
