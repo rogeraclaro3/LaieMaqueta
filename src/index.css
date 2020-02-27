@@ -222,36 +222,38 @@ li.dropdown {
 }
 
 .slick-slider.slPrincipal {
-    width: 100%;
-    margin-left: 0px;
+  width: 100%;
+  margin-left: 0px;
 }
 
 .slPrincipal .slick-prev {
-    left: 0px;
-    z-index: 1;
+  left: 0px;
+  z-index: 1;
 }
 
 .slPrincipal .slick-next {
-    right: 0px;
+  right: 0px;
 }
 
 .slPrincipal .slick-dots li button:before {
-    font-size: 14px;
+  font-size: 14px;
 }
+
 .slPrincipal .slick-dots {
-    bottom: 15px;
+  bottom: 15px;
 }
 
 .slPrincipal .slick-dots li {
-    margin: 0 1px;
+  margin: 0 1px;
 }
 
 .slide_slPrincipal {
   background-color: #F8F9FB;
+  height: 430px;
 }
 
 .slide_slPrincipal .card-body {
-    width: 35%;
+  width: 35%;
 }
 
 .slide_slPrincipal .sl_titol {
@@ -271,16 +273,16 @@ li.dropdown {
 }
 
 .slide_slPrincipal .btn-primary {
-    color: #fff;
-    background-color: #002343;
-    border-color: #002343;
-    font-family: 'Poppins Black';
-    font-size: 16px;
-    margin-top: 30px;
+  color: #fff;
+  background-color: #002343;
+  border-color: #002343;
+  font-family: 'Poppins Black';
+  font-size: 16px;
+  margin-top: 30px;
 }
 
 .slide_slPrincipal .btn-primary:hover {
-  color:#f49331;
+  color: #f49331;
 }
 
 .slick-slide {
@@ -722,6 +724,38 @@ footer {
 
 .logosfooter {
   margin-top: -8px;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+/**** Modal ***/
+
+.modal-inici {
+  min-width: 50%;
+}
+
+.subscriu-fons.modal-header {
+  border-bottom: 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.subscriu-fons.modal-header .close {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.modal-header .close {
+  padding: 1rem 2rem;
+  margin: -1rem -1rem -1rem auto;
 }
 
 @media (min-width: 1000px) {

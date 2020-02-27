@@ -48,7 +48,7 @@ class Magazine extends React.Component {
 					<div className="col-lg-6"><img src={Icona} className="icona-align" alt="icona" /><h4>Al nostre Magazine de not&iacute;cies</h4></div>
 					<div className="col-lg-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
 				</div>
-				<Slider {...settings}>
+				<Slider {...settings} className='carrussel'>
 
 					<div className="separah15">
             <Card className="regala_card_llibre">
