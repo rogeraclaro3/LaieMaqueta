@@ -7,7 +7,7 @@ import Magazine01 from './activitat01.jpg';
 import Magazine02 from './activitat02.jpg';
 import Icona from '../icon01.png';
 
-class Activitats extends React.Component {
+class Magazine extends React.Component {
 
   render() {
     const settings = {
@@ -116,4 +116,4 @@ class Activitats extends React.Component {
   }
 }
 
-export default Activitats;
+export default Magazine;

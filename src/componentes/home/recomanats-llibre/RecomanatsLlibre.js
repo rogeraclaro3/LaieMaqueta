@@ -48,7 +48,7 @@ class Recomanats_llibreries extends React.Component {
 					<div className="col-lg-6"><img src={Icona} className="icona-align" alt="icona"/><h4>Els llibreters de Laie recomanen</h4></div>
 					<div className="col-lg-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
 				</div>
-        <Slider {...settings}>
+        <Slider {...settings} className='carrussel'>
           <div>
             <Card className="recom_card_llibre">
 							<Card.Img variant="top" src={FotollibreRecomanatGran01} />
