@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import logolaie from './logo-laie.png';
 import cerca from './cerca.png';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
@@ -29,7 +30,7 @@ class Menu extends React.Component {
               </div>
             </li>
             <li>
-              <a href="">Objectes</a>
+              <Link className="dropbtn" to="/searchres">Objectes</Link>
             </li>
             <li>
               <a href="">Agenda</a>
@@ -73,7 +74,7 @@ class Menu extends React.Component {
               </li>
                 <li>|</li>
               <li className="item">
-                <a href="#" className="sel-idiomes">Català</a>
+                <a href="#" className="sel-idiomes">Catal&agrave;</a>
               </li>
             </ul>
           </div>

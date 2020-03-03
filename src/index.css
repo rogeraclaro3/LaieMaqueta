@@ -67,6 +67,14 @@ h4 a {
   color: #002343;
 }
 
+
+a {
+    color: #002343;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: transparent;
+}
+
 .main-nav {
   max-width: 1080px;
   margin: 0 auto;
@@ -382,6 +390,7 @@ li.dropdown {
   width: 145px;
   height: 228px;
   margin: 0 auto;
+  display: block;
 }
 
 .recom_card {
@@ -757,6 +766,58 @@ footer {
   padding: 1rem 2rem;
   margin: -1rem -1rem -1rem auto;
 }
+
+.lnk-buscador-avanzado a {
+  text-decoration: none;
+}
+
+/******** Resultats Cerca *********/
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #002343;
+}
+
+.btn-buit {
+  background-color: white;
+  border: 2px solid #002343;
+  color: #002343;
+}
+
+.btn-buit:hover {
+  color: #fff;
+}
+
+.menu-resultats .btn-link {
+  color: #002343;
+}
+
+.menu-resultats .btn {
+  color: #002343;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-resultats .card-header {
+    padding: .55rem 1rem;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: 0px;
+}
+
+.menu-resultats .card {
+    border: 0px;
+}
+
+.menu-resultats .card-body {
+    padding: 1rem;
+}
+
+
+
 
 @media (min-width: 1000px) {
   .main-nav a {
