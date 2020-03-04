@@ -69,10 +69,10 @@ h4 a {
 
 
 a {
-    color: #002343;
-    text-decoration: underline;
-    font-weight: bold;
-    background-color: transparent;
+  color: #002343;
+  text-decoration: underline;
+  font-weight: bold;
+  background-color: transparent;
 }
 
 .main-nav {
@@ -774,10 +774,10 @@ footer {
 /******** Resultats Cerca *********/
 
 hr {
-    margin-top: 0px;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid #002343;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #002343;
 }
 
 .btn-buit {
@@ -802,21 +802,169 @@ hr {
 }
 
 .menu-resultats .card-header {
-    padding: .55rem 1rem;
-    margin-bottom: 0;
-    background-color: transparent;
-    border-bottom: 0px;
+  padding: .55rem 1rem;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-bottom: 0px;
 }
 
 .menu-resultats .card {
-    border: 0px;
+  border: 0px;
 }
 
 .menu-resultats .card-body {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 
+/**** Accordion ****/
+
+.app {
+  margin: 0 auto;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 0 0;
+}
+
+.app__text {
+  width: 100%;
+}
+
+.app__collapse {
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app__collapse--gradient .app__content {
+  border-color: transparent;
+}
+
+.app__collapse--gradient:after {
+  pointer-events: none;
+  transition: opacity 300ms;
+  will-change: opacity;
+  opacity: 1;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent 50%, white);
+}
+
+.app__collapse--active:after {
+  opacity: 0;
+}
+
+.app__content {
+  border: 0;
+  font-size: 1rem;
+  padding: 1rem 0 0 0;
+  margin-bottom: 0;
+  position: relative;
+  transition: 300ms;
+}
+
+.app__toggle {
+  width: 100%;
+  margin: 0;
+  border: 1px solid transparent;
+  font-weight: bold;
+  padding: 1rem 0 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px #888;
+  background-color: #fff;
+  transition: background-color 300ms;
+}
+
+.app__toggle--active {
+  background-color: #fafafa;
+}
+
+.app__toggle-text {
+  font-size: inherit;
+}
+
+.app__button {
+  display: block;
+  width: 20rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.app__image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  transition: transform 300ms cubic-bezier(0, 1, 0, 1);
+  will-change: transform;
+}
+
+.icon--expanded {
+  transform: rotateZ(-179.99deg);
+}
+
+.rotate90 {
+  transform: rotateZ(90deg);
+}
+
+button.app__toggle {
+  font-size: 1rem;
+  box-shadow: none;
+  background: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #002343;
+}
+
+button.app__toggle.app__toggle_sub {
+  border-bottom: 0;
+  padding-left: 0.8rem;
+  padding-top: 0.5rem;
+  font-weight: normal;
+}
+
+button.app__toggle.app__toggle_subsub {
+  border-bottom: 0;
+  padding-left: 1.6em;
+  padding-top: 0rem;
+  font-weight: normal;
+}
+
+.app__content ul {
+  padding-left: 2.4rem;
+  list-style: none;
+  margin-top: -0.5rem;
+}
+
+.app__content ul li {
+  padding-bottom: 0.5rem;
+}
+
+.app__content ul li a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.app__content ul li a:hover {
+  text-decoration: underline;
+}
 
 
 @media (min-width: 1000px) {
