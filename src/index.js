@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter as Router, Route, Switch} from 'react-router-dom';
-//import { render } from 'react-snapshot';
 
 //tipos
 import './fonts/Poppins-ExtraLight.ttf';
@@ -18,6 +17,9 @@ import './index.css';
 // planes de la web
 import Home from './componentes/home/Home';
 import SearchRes from './componentes/searchres/SearchRes';
+import Objectes from './componentes/objectes/Objectes';
+import Llibre from './componentes/llibre/Llibre';
+
 
 // config de les rutes de la web
 ReactDOM.render (
@@ -26,6 +28,8 @@ ReactDOM.render (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/searchres" component={SearchRes} />
+        <Route path="/objectes" component={Objectes} />
+        <Route path="/llibre" component={Llibre} />
       </Switch>
     </div>
   </Router>,

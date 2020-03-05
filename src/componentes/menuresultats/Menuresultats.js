@@ -1,6 +1,8 @@
 import React from "react";
 import cx from "classnames";
 import Collapse from "@kunukn/react-collapse";
+//import { Typeahead } from 'react-bootstrap-typeahead';
+//import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 class Menulateral extends React.Component {
   state = {
@@ -16,12 +18,51 @@ class Menulateral extends React.Component {
     isOpen10: false,
     isOpen11: false,
     isOpen12: false,
+    isOpen13: false,
     spy3: {}
   };
 
   render() {
     return (
       <div className="app">
+{/* Ordenar */}
+      <span className="select-ordenar text">Ordenar per:</span>
+       <button
+          className={cx("select-ordenar app__toggle", {
+            "app__toggle--active": this.state.isOpen13
+          })}
+          onClick={() => this.toggle(13)}
+        >
+          <span className="app__toggle-text"></span>
+          <div className="rotate90">
+            <svg
+              className={cx("icon", { "icon--expanded": this.state.isOpen13 })}
+              viewBox="6 0 12 24"
+            >
+              <polygon points="8 0 6 1.8 14.4 12 6 22.2 8 24 18 12" />
+            </svg>
+          </div>
+        </button>
+
+        <Collapse
+          isOpen={this.state.isOpen13}
+          className={
+            "select-ordenar app__collapse app__collapse--gradient " +
+            (this.state.isOpen13 ? "app__collapse--active" : "")
+          }
+          transition="height 300ms cubic-bezier(0.4, 0, 0.2, 1)"
+        >
+          <div className="ordenar-list app__content">
+            <ul>
+              <li><a href="">Títol [A-Z]</a></li>
+              <li><a href="">Títol [Z-A]</a></li>
+              <li><a href="">Autor [A-Z]</a></li>
+              <li><a href="">Autor [Z-A]</a></li>
+              <li><a href="">Data publicació [DESC]</a></li>
+              <li><a href="">Data publicació [ASC]</a></li>
+            </ul>
+          </div>
+        </Collapse>
 {/* Categories */}
         <button
           className={cx("app__toggle", {
@@ -74,7 +115,7 @@ class Menulateral extends React.Component {
               transition="height 300ms cubic-bezier(0.4, 0, 0.2, 1)"
               >
               <div className="app__content">
-{/* SubSubcategoria 1 */}
+{/* Sub_Subcategoria 1 */}
                 <button
                   className={cx("app__toggle app__toggle_subsub", {
                     "app__toggle--active": this.state.isOpen12
@@ -94,7 +135,7 @@ class Menulateral extends React.Component {
                 <Collapse
                   isOpen={this.state.isOpen12}
                   className={
-                    "app__collapse app__collapse--gradient " +
+                    "app__collapse app__collapse_subsub app__collapse--gradient " +
                     (this.state.isOpen12? "app__collapse--active" : "")
                   }
                   transition="height 300ms cubic-bezier(0.4, 0, 0.2, 1)"
@@ -109,7 +150,7 @@ class Menulateral extends React.Component {
                     </ul>
                   </div>
                 </Collapse>
-{/* Fi SubSubcategoria 1 */}
+{/* Fi Sub_Subcategoria 1 */}
               </div>
             </Collapse>
 {/* Fi Subcategoria 1 */}

@@ -1,7 +1,5 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-
 import Menu from '../menu/Menu';
 import Slider from './slider/Slider';
 import RecomanatsLlibre from './recomanats-llibre/RecomanatsLlibre';
@@ -13,7 +11,6 @@ import Targeta from './targeta/Targeta';
 import Activitats from './activitats/Activitats';
 import Magazine from './magazine/Magazine';
 import Newsletter from './newsletter/Newsletter';
-import Menubottom from '../menubottom/Menubottom';
 import Footer from '../footer/Footer';
 
 class Home extends React.Component {
@@ -33,7 +30,6 @@ class Home extends React.Component {
 					<Activitats />
 					<Magazine />
 					<Newsletter />
-					<Menubottom />
 				</div>
 	  	</main>
 	  	<Footer />
@@ -51,21 +47,7 @@ function ModalInici() {
 		<>
 			<Modal show={show} onHide={handleClose} dialogClassName="modal-inici" centered>
 				<Modal.Header closeButton className="subscriu-fons"></Modal.Header>
-				<div className="separab60_pad subscriu-fons">
-					<div className="row">
-						<div className="col-lg-12 centrat">
-							<span className="titol">Subscriu-te al nostre newsletter</span>
-							<span className="text">
-								<p>Estigues al corrent de totes les novetats i aconsegueix un <strong>5% de descompte</strong> en la teva primera compra</p>
-							</span>
-						</div>
-					</div>
-					<form className="row mb-5">
-						<div className="col-lg-12 centrat">
-							<input type="email" className="form-control" id="Email" placeholder="e-mail" required /><button type="submit" className="btn btn-primary boto-nwsltr">Envia</button>
-						</div>
-					</form>
-				</div>
+					<Newsletter />
 			</Modal>
 		</>
 	);

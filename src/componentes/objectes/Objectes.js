@@ -1,13 +1,13 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Menu from '../menu/Menu';
-import Menuresultats from '../menuresultats/Menuresultats';
-import ResultatsLlibres from './resultatsllibres/Resultats';
+import Menuresultats from '../menuresultats/Menuresultatsobjectes';
+import ResultatsObjectes from './resultatsobjectes/Resultats';
 import Newsletter from '../home/newsletter/Newsletter';
 import Menubottom from '../menubottom/Menubottom';
 import Footer from '../footer/Footer';
 
-class SearchRes extends React.Component {
+class Objectes extends React.Component {
 	render() {
 		return(
 			<>
@@ -25,11 +25,10 @@ class SearchRes extends React.Component {
 						<div className="col-9">
 							<div className="row separav60 separab60">
 								<div className="col-lg-12">
-										<h4 className="titol-secc">Resultats de la cerca: "Walter"</h4>
+									<h4 className="titol-secc">Moda</h4>
 									<hr />
-									<p className='normal'>no trobes el que estàs buscant? vés al <a href="">Cercador avançat</a></p>
-									<ResultatsLlibres />
-									<ResultatsLlibres />
+									<ResultatsObjectes />
+									<ResultatsObjectes />
 										<div className="centra-veure_mes">
 										<Button className="btn-buit">VEURE'N MÉS</Button>
 									</div>
@@ -46,4 +45,4 @@ class SearchRes extends React.Component {
 	}
 }
 
-export default SearchRes;
+export default Objectes;

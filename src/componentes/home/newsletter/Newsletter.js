@@ -18,7 +18,8 @@ class Newsletter extends React.Component {
 						</div>
 						<form className="row mb-5">
 							<div className="col-lg-12 centrat">
-								<input type="email" className="form-control" id="Email" placeholder="e-mail" required /><button type="submit" className="btn btn-primary boto-nwsltr">Envia</button>
+								<input type="email" className="form-control" id="Email" placeholder="e-mail" required /><button type="submit" className="btn btn-primary boto-nwsltr">Envia</button><br/>
+								<input type="checkbox" className="form-checkbox" id="Accepto" required /><span className="text">He llegit i accepto la <a href="">política de privacitat</a></span>
 							</div>
 						</form>
 					</div>

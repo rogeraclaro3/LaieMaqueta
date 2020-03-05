@@ -1,6 +1,5 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import { Card, Button } from 'react-bootstrap';
 import FotollibreRecomanatGran01 from './llibre01.jpg';
 
 class Resultats extends React.Component {
@@ -8,7 +7,6 @@ class Resultats extends React.Component {
   render() {
     return (
 			<div className="row separab30">
-
 				<div className="col-lg-3">
 					<Card className="recom_card_llibre">
 						<Card.Img variant="top" src={FotollibreRecomanatGran01} />
@@ -22,7 +20,6 @@ class Resultats extends React.Component {
 						</Card.Body>
 					</Card>
 				</div>
-
 				<div className="col-lg-3">
 					<Card className="recom_card_llibre">
 						<Card.Img variant="top" src={FotollibreRecomanatGran01} />
@@ -36,7 +33,6 @@ class Resultats extends React.Component {
 						</Card.Body>
 					</Card>
 				</div>
-
 				<div className="col-lg-3">
 					<Card className="recom_card_llibre">
 						<Card.Img variant="top" src={FotollibreRecomanatGran01} />
@@ -50,7 +46,6 @@ class Resultats extends React.Component {
 						</Card.Body>
 					</Card>
 				</div>
-
 				<div className="col-lg-3">
 					<Card className="recom_card_llibre">
 						<Card.Img variant="top" src={FotollibreRecomanatGran01} />
@@ -64,7 +59,6 @@ class Resultats extends React.Component {
 						</Card.Body>
 					</Card>
 				</div>
-
 			</div>
     )
   }

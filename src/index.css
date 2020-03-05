@@ -50,6 +50,12 @@ code {
 header {
   background: #002343;
   height: 88px;
+  /*
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  */
 }
 
 h4 {
@@ -57,6 +63,10 @@ h4 {
   font-size: 28px;
   text-transform: uppercase;
   display: inline-block;
+}
+
+h4.titol-secc {
+  text-transform: none;
 }
 
 h4 a {
@@ -73,6 +83,11 @@ a {
   text-decoration: underline;
   font-weight: bold;
   background-color: transparent;
+}
+
+a:hover {
+  color: #f49331;
+  text-decoration: none;
 }
 
 .main-nav {
@@ -165,6 +180,10 @@ li.dropdown {
   display: block;
 }
 
+.card {
+  border-radius: 0 !important;
+}
+
 /* colors */
 .shadow-grey {
   background-color: #d1d7dd;
@@ -173,6 +192,7 @@ li.dropdown {
 
 .inici-home {
   margin-top: 66px;
+  /*margin-top: 150px;*/
 }
 
 .container-fluid {
@@ -190,6 +210,10 @@ li.dropdown {
 
 .carousel {
   background-color: antiquewhite;
+}
+
+.separav120 {
+  margin-top: 120px;
 }
 
 .separav60 {
@@ -222,6 +246,14 @@ li.dropdown {
 
 .separab200 {
   margin-bottom: 200px;
+}
+
+.separab120 {
+  margin-bottom: 120px;
+}
+
+.separab60 {
+  margin-bottom: 60px;
 }
 
 .slPrincipal .slick-list {
@@ -299,9 +331,9 @@ li.dropdown {
 
 .regala_card_llibre {
   display: inline-block;
-  -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.4);
   min-width: 100%;
 }
 
@@ -340,9 +372,9 @@ li.dropdown {
 .recom_card_llibre {
   display: inline-block;
   width: 180px;
-  -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.4);
 }
 
 .recom_card_llibre .card-text {
@@ -359,8 +391,8 @@ li.dropdown {
 }
 
 .slick-slider {
-  width: 1156px;
   margin-left: -25px;
+  margin-right: -25px;
 }
 
 .carrussel .slick-list {
@@ -396,9 +428,9 @@ li.dropdown {
 .recom_card {
   /*width: 90%;*/
   height: 375px;
-  -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.4);
   background-position: bottom 20px right 20px;
   background-repeat: no-repeat;
 }
@@ -557,18 +589,25 @@ li.dropdown {
   display: inline-block;
   font-size: 14px;
   line-height: 24px;
+  font-weight: bold;
   font-family: 'Poppins Extralight';
 }
 
 .more-sites.half a {
   float: left;
   width: 48%;
+  text-decoration: none;
 }
 
 .more-sites a {
   color: #fff;
   display: block;
   line-height: 24px;
+  text-decoration: none;
+}
+
+.more-sites a:hover {
+  text-decoration: underline;
 }
 
 img.Logopeu {
@@ -633,6 +672,10 @@ input.bcerca {
 
 .header-bottom {
   background-color: rgba(254, 254, 254, 1);
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  height: 62px;
 }
 
 .header-bottom .wrap {
@@ -656,6 +699,11 @@ input.bcerca {
 ul.options {
   list-style: none;
 }
+
+ul.options a {
+  text-decoration: none;
+}
+
 
 .header-bottom .wrap .options>.item:first-child {
   width: 55%;
@@ -763,8 +811,12 @@ footer {
 }
 
 .modal-header .close {
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 0;
   margin: -1rem -1rem -1rem auto;
+}
+
+.modal-header {
+  padding: 1rem 1rem 0 1rem;
 }
 
 .lnk-buscador-avanzado a {
@@ -816,6 +868,10 @@ hr {
   padding: 1rem;
 }
 
+input[type=checkbox],
+input[type=radio] {
+  margin: 30px 10px 0 0;
+}
 
 /**** Accordion ****/
 
@@ -826,7 +882,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0 0 0;
+  padding-right: 2rem;
 }
 
 .app__text {
@@ -895,6 +951,10 @@ hr {
   font-size: inherit;
 }
 
+span.app__toggle-text {
+  text-align: left;
+}
+
 .app__button {
   display: block;
   width: 20rem;
@@ -948,9 +1008,16 @@ button.app__toggle.app__toggle_subsub {
 }
 
 .app__content ul {
+  /*padding-left: 2.4rem;*/
+  list-style: none;
+  margin-bottom: 0rem;
+  /*margin-top: -0.5rem;*/
+}
+
+.app__collapse_subsub .app__content ul {
   padding-left: 2.4rem;
   list-style: none;
-  margin-top: -0.5rem;
+  margin-bottom: 0rem;
 }
 
 .app__content ul li {
@@ -960,16 +1027,199 @@ button.app__toggle.app__toggle_subsub {
 .app__content ul li a {
   text-decoration: none;
   font-weight: normal;
+  color: #002343;
 }
 
-.app__content ul li a:hover {
+.app__content ul li a:hover,
+.app__content ul li a:active,
+.app__content ul li a:focus {
+  text-decoration: none;
+  color: #f49331;
+}
+
+.centra-veure_mes {
+  /* margin: 0 auto; */
+  text-align: center;
+  padding-top: 4rem;
+}
+
+/*
+
+.select-ordenar dropdown-menu {
+  min-width: 100%;
+  color: #002343;
+}
+
+.select-ordenar .dropdown-toggle::after {
+  display: none;
+}
+
+.select-ordenar .dropdown-menu {
+  min-width: 100%;
+}
+*/
+
+.icon {
+  width: 2em;
+  height: 0.8em;
+}
+
+.select-ordenar {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  min-width: 100%;
+}
+
+.select-ordenar.app__toggle {
+  color: #fff;
+  background-color: #002343;
+  border-color: #002343;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0 0.3rem;
+  border-radius: 10px;
+}
+
+.select-ordenar.app__collapse {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: -10px 0 10px 0;
+}
+
+.select-ordenar .icon {
+  fill: #fff;
+}
+
+.ordenar-list.app__content ul {
+  padding-left: 1rem;
+  list-style: none;
+  padding-bottom: 1rem;
+}
+
+.ordenar-list.app__content {
+  background-color: #002343;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.ordenar-list ul li a {
+  color: #fff;
+}
+
+.main-nav-list .dropbtn:active {
   text-decoration: underline;
 }
 
+/**** fitxes ****/
 
-@media (min-width: 1000px) {
-  .main-nav a {
-    max-width: 500px;
-    font-size: 14px;
-  }
+.fitxa .slick-slider {
+  margin: 0;
+}
+
+.fitxa .recom_card_llibre {
+  width: 90%;
+}
+
+.fitxa .recom_card_llibre img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.fitxa .card {
+  border: 0;
+}
+
+.fitxa .recom_card {
+  width: 100%;
+  height: auto;
+  box-shadow: none;
+}
+
+.fitxa .carrussel .slick-list {
+  padding: 0;
+}
+
+.fitxa .body_recom.card-body {
+  padding: 0rem;
+}
+
+.fitxa .titol_recom.card-title.h5 {
+  font-size: 25px;
+}
+
+.fitxa .recom_card .subtitol.card-subtitle.h6 {
+  margin-top: 0;
+  margin-bottom: .75rem;
+  font-family: 'Poppins Bold';
+  font-size: 19px;
+}
+
+.fitxa .recom_card .autor.card-subtitle.h6 {
+  margin-top: 0;
+  margin-bottom: .75rem;
+  font-family: 'Poppins Regular';
+  font-size: 16px;
+}
+
+.fitxa .preu_recom.card-text {
+  margin-top: 2rem;
+  font-family: 'Poppins Regular';
+  font-size: 20px;
+  color: #f49331;
+}
+
+.fitxa .preu_recom.card-text .preu-iva {
+  font-size: 16px;
+  color: #002343;
+  padding-left: 1rem;
+}
+
+.fitxa .recom_card .btn-primary {
+  background-color: #f49331;
+  border: 2px solid #f49331;
+  width: 17rem;
+  font-family: 'Poppins Black';
+  font-size: 14px;
+}
+
+.fitxa .recom_card .btn-buit.btn-primary {
+  background-color: white;
+  border: 2px solid #f49331;
+  margin-left: 1rem;
+  color: #f49331;
+}
+
+.fitxa .recom_card .btn-buit.btn-primary:hover {
+  background-color: #f49331;
+  border: 2px solid #f49331;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.fitxa p.fitxa-text.card-text {
+  padding-top: 2rem;
+}
+
+.fitxa .fitxa-text {
+  font-family: 'Poppins Regular';
+  font-size: 14px;
+}
+
+.fitxa .fitxa-text .textintro {
+  font-family: 'Poppins Bold';
+  font-size: 17px;
+  padding-bottom: 1rem;
+}
+
+.recomanats .row,
+.recomanats .slick-slider {
+  margin: 0;
 }

@@ -2,35 +2,28 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import logolaie from './logo-laie.png';
 import cerca from './cerca.png';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
 class Menu extends React.Component {
 
   render() {
   	return (
-      <header className="">
-        <nav role="navigation" className="main-nav" id="main-nav">
+      <header className="container-fluid">
+        <nav role="container navigation" className="main-nav" id="main-nav">
           <div className="top-nav-logo">
-            <a href="">
-              <img src={logolaie} alt="Laie logo" />
-            </a>
+            <Link to="/"><img src={logolaie} alt="Laie logo" /></Link>
           </div>
           <ul id="main-nav-list">
             <li className="dropdown">
-              <a href="" className="dropbtn">
-                Llibres
-              </a>
-              <div className="dropdown-content">
+              <Link className="dropbtn" to="/llibre">Llibres</Link>
+              {/* <div className="dropdown-content">
                 <a href="">Link 1</a>
                 <a href="">Link 2</a>
                 <a href="">Link 3</a>
-              </div>
+              </div> */}
             </li>
             <li>
-              <Link className="dropbtn" to="/searchres">Objectes</Link>
+              <Link className="dropbtn" to="/objectes">Objectes</Link>
             </li>
             <li>
               <a href="">Agenda</a>
@@ -54,13 +47,13 @@ class Menu extends React.Component {
                 <div className="search" data-type="search-form">
                   <form id="search" className="form" action="https://www.laie.es/search" method="get">
                     <input type="cerca" className="form-control-cerca" id="Cerca" placeholder="Què estàs buscant?" required />
-                    <input type="image" src={cerca} border="0" alt="Submit" className="bcerca"/>
+                      <Link to="/searchres"><input type="image" src={cerca} border="0" alt="Submit" className="bcerca"/></Link>
                   </form>
                 </div>
               </li>
               <li className="item">
                 <div className="lnk-buscador-avanzado hidden-xs visible-sm">
-                  <a href="https://www.laie.es/cercador-avancat" className="bCercaAv">Cercador avançat</a>
+                  <a href="" className="bCercaAv">Cercador avançat</a>
                 </div>
               </li>
               <li className="item">
