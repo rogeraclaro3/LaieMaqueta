@@ -2,7 +2,6 @@ import React from 'react';
 import Logos from './logos.png';
 import MenuBottom from '../menubottom/Menubottom';
 
-
 class Footer extends React.Component {
   render() {
     return (

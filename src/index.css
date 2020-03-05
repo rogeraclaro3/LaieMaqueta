@@ -1122,15 +1122,47 @@ button.app__toggle.app__toggle_subsub {
   margin: 0;
 }
 
-.fitxa .recom_card_llibre {
-  width: 90%;
+.fitxa .imatge-detall .carrussel .slick-list {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.fitxa .recom_card_llibre img {
+.fitxa .imatge-detall {
+  margin-top: -5px;
+}
+
+.fitxa .regala_card_llibre.card img.card-img-top {
+  padding: 20px 0 0 0;
+}
+
+.fitxa .recomanats .slick-slider .slick-slide {
+  padding: 10px 20px 10px 20px;
+}
+
+.fitxa .recom_card_llibre.card,
+.fitxa .regala_card_llibre.card {
+  min-width: 100%;
+}
+
+.fitxa .recom_card_llibre img,
+.fitxa .regala_card_llibre img {
   width: 100%;
   height: auto;
   margin: 0 auto;
   display: block;
+  /*padding-top: 20px;*/
+}
+
+.fitxa .imatge-detall .recom_card_llibre {
+  max-width: 90%;
+}
+
+.fitxa .imatge-detall .recom_card_llibre.card {
+  min-width: 90%;
+}
+
+.regala_card_llibre.card img.card-img-top {
+  padding: 0px;
 }
 
 .fitxa .card {
@@ -1201,7 +1233,7 @@ button.app__toggle.app__toggle_subsub {
   background-color: #f49331;
   border: 2px solid #f49331;
   margin-left: 1rem;
-  color: #fff;
+  color: #002324
 }
 
 .fitxa p.fitxa-text.card-text {
@@ -1214,6 +1246,7 @@ button.app__toggle.app__toggle_subsub {
 }
 
 .fitxa .fitxa-text .textintro {
+  display: block;
   font-family: 'Poppins Bold';
   font-size: 17px;
   padding-bottom: 1rem;

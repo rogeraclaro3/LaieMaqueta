@@ -4,7 +4,6 @@ import Menu from '../menu/Menu';
 import Menuresultats from '../menuresultats/Menuresultatsobjectes';
 import ResultatsObjectes from './resultatsobjectes/Resultats';
 import Newsletter from '../home/newsletter/Newsletter';
-import Menubottom from '../menubottom/Menubottom';
 import Footer from '../footer/Footer';
 
 class Objectes extends React.Component {

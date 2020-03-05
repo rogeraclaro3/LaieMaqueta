@@ -4,7 +4,6 @@ import Menu from '../menu/Menu';
 import Menuresultats from '../menuresultats/Menuresultats';
 import ResultatsLlibres from './resultatsllibres/Resultats';
 import Newsletter from '../home/newsletter/Newsletter';
-import Menubottom from '../menubottom/Menubottom';
 import Footer from '../footer/Footer';
 
 class SearchRes extends React.Component {

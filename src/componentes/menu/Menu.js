@@ -26,7 +26,7 @@ class Menu extends React.Component {
               <Link className="dropbtn" to="/objectes">Objectes</Link>
             </li>
             <li>
-              <a href="">Agenda</a>
+              <Link className="dropbtn" to="/objecte">Agenda</Link>
             </li>
             <li>
               <a href="">Magazine</a>

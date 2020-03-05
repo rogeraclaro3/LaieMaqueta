@@ -15,7 +15,7 @@ class Contingut_Llibre extends React.Component {
 						</Card.Text>
 						<Button variant="primary">COMPRAR</Button><Button className="btn-buit">AFEGIR A FAVORITS</Button>
 						<Card.Text className="fitxa-text">
-						<div className="textintro">Descripció</div>
+						<span className="textintro">Descripció</span>
 						Hace 100 años Walter Gropius fundó la Bauhaus, la escuela que introdujo una nueva
 						concepción del arte y del diseño. Los nombres de quienes participaron en aquella
 						asombrosa experiencia son casi tan reconocibles como su producción artística. Kandinski,
@@ -28,7 +28,7 @@ class Contingut_Llibre extends React.Component {
 						figuras del panorama artístico del siglo XX.
 						</Card.Text>
 						<Card.Text className="fitxa-text">
-						<div className="textintro">Detalls</div>
+						<span className="textintro">Detalls</span>
 							Turner Publicaciones, S.l.<br/>
 							2019<br />
 							600 pàgines<br />

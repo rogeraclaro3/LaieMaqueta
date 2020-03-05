@@ -15,7 +15,7 @@ import Footer from '../footer/Footer';
 
 class Home extends React.Component {
 	render() {
-		return(
+		return (
 			<>
 			<Menu />
 			<main role="main" className="flex-shrink-0 inici-home">

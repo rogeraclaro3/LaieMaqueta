@@ -15,23 +15,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 // planes de la web
+import ScrollToTop from './componentes/scrolltotop/Scrolltop';
 import Home from './componentes/home/Home';
 import SearchRes from './componentes/searchres/SearchRes';
 import Objectes from './componentes/objectes/Objectes';
 import Llibre from './componentes/llibre/Llibre';
-
+import Objecte from './componentes/objecte/Objecte';
 
 // config de les rutes de la web
 ReactDOM.render (
   <Router>
+    <ScrollToTop >
     <div>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/searchres" component={SearchRes} />
         <Route path="/objectes" component={Objectes} />
         <Route path="/llibre" component={Llibre} />
+        <Route path="/objecte" component={Objecte} />
       </Switch>
     </div>
+    </ScrollToTop>
   </Router>,
   document.getElementById ('root')
 );

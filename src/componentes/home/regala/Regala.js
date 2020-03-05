@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import FotoRegala01 from './regala01.jpg';
@@ -9,7 +10,6 @@ class Regala extends React.Component {
 
   render() {
     return (
-
         <div className="container separav60 separab60">
 						<div className="row">
 							<div className="col-lg-6"><img src={Icona} className="icona-align" alt="icona" /><h4>Regala millor amb Laie</h4></div>
@@ -24,7 +24,7 @@ class Regala extends React.Component {
 											<Card.Text>
 												25,00&euro;
 											</Card.Text>
-											<Button variant="primary">COMPRAR</Button>
+												<Link to="/objecte"><Button to="/objecte" variant="primary">COMPRAR</Button></Link>
 										</Card.Body>
 									</Card>
                 </div>
@@ -116,7 +116,6 @@ class Regala extends React.Component {
                 </div>
 						</div>
         </div>
-
     )
   }
 }
