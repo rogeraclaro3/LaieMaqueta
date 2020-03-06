@@ -15,7 +15,7 @@ class Llibre extends React.Component {
 					<div className="container separav120 separab120">
 						<div className="row usuari">
 							<div className="col-md-12 col-lg-8 mx-auto">
-								<div className="imatge_thk"><img src={RrhhImg} /></div>
+								<div className="imatge_thk"><img src={RrhhImg} alt=""/></div>
 								<div className="titol_thk">Gr&agrave;cies pel teu inter&egrave;s a treballar a Laie!</div>
 								<div className="text_thk">Et confirmem que el Departament de Recursos Humans ha rebut correctament el teu formulari.</div>
 								<div className="boto_submit_seguir">

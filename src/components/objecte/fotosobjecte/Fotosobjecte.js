@@ -12,7 +12,7 @@ class Fotos_llibre extends React.Component {
     const settings = {
       customPaging: function (i) {
         return (
-          <a>
+          <a href="/#">
             <img src={`${baseUrl}regala0${i + 1}.jpg`} />
           </a>
         );

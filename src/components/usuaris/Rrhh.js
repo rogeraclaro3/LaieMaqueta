@@ -79,7 +79,7 @@ class Llibre extends React.Component {
 									</Form.Group>
 
 									<Form.Group id="formGridCheckbox2">
-										<Form.Check type="checkbox" /><span className="text">He llegit i accepto el tractament de les meves dades conforme a la <a href="">polí­tica de privacitat</a></span>
+										<Form.Check type="checkbox" /><span className="text">He llegit i accepto el tractament de les meves dades conforme a la <a href="/#">polí­tica de privacitat</a></span>
 									</Form.Group>
 
 									<Form.Group id="formGridCheckbox3">

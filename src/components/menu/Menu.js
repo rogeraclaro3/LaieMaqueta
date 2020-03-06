@@ -17,9 +17,9 @@ class Menu extends React.Component {
             <li className="dropdown">
               <Link className="dropbtn" to="/llibre">Llibres</Link>
               {/* <div className="dropdown-content">
-                <a href="">Link 1</a>
-                <a href="">Link 2</a>
-                <a href="">Link 3</a>
+                <a href="/#">Link 1</a>
+                <a href="/#">Link 2</a>
+                <a href="/#">Link 3</a>
               </div> */}
             </li>
             <li>
@@ -29,13 +29,13 @@ class Menu extends React.Component {
               <Link className="dropbtn" to="/objecte">Agenda</Link>
             </li>
             <li>
-              <a href="">Magazine</a>
+              <a href="/#">Magazine</a>
             </li>
             <li>
-              <a href="">On som</a>
+              <a href="/#">On som</a>
             </li>
             <li>
-              <a href="">Qui som</a>
+              <a href="/#">Qui som</a>
             </li>
           </ul>
         </nav>
@@ -53,7 +53,7 @@ class Menu extends React.Component {
               </li>
               <li className="item">
                 <div className="lnk-buscador-avanzado hidden-xs visible-sm">
-                  <a href="" className="bCercaAv">Cercador avançat</a>
+                  <a href="/#" className="bCercaAv">Cercador avançat</a>
                 </div>
               </li>
               <li className="item">
@@ -69,7 +69,7 @@ class Menu extends React.Component {
               </li>
                 <li>|</li>
               <li className="item">
-                <a href="#" className="sel-idiomes">Catal&agrave;</a>
+                <a href="/#" className="sel-idiomes">Catal&agrave;</a>
               </li>
             </ul>
           </div>

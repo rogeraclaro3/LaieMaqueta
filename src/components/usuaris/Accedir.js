@@ -24,7 +24,7 @@ class Llibre extends React.Component {
 										<Form.Label>Contrassenya</Form.Label>
 										<Form.Control type="password" />
 									</Form.Group>
-									<span className="text_form"><a href="">Has oblidat la contrassenya?</a></span>
+									<span className="text_form"><a href="/#">Has oblidat la contrassenya?</a></span>
 									<div className="boto_submit">
 									<Button variant="primary" type="submit">
 										ACCEDIR

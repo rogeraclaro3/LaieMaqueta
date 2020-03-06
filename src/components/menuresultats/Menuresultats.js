@@ -54,12 +54,12 @@ class Menulateral extends React.Component {
         >
           <div className="ordenar-list app__content">
             <ul>
-              <li><a href="">Títol [A-Z]</a></li>
-              <li><a href="">Títol [Z-A]</a></li>
-              <li><a href="">Autor [A-Z]</a></li>
-              <li><a href="">Autor [Z-A]</a></li>
-              <li><a href="">Data publicació [DESC]</a></li>
-              <li><a href="">Data publicació [ASC]</a></li>
+              <li><a href="/#">Títol [A-Z]</a></li>
+              <li><a href="/#">Títol [Z-A]</a></li>
+              <li><a href="/#">Autor [A-Z]</a></li>
+              <li><a href="/#">Autor [Z-A]</a></li>
+              <li><a href="/#">Data publicació [DESC]</a></li>
+              <li><a href="/#">Data publicació [ASC]</a></li>
             </ul>
           </div>
         </Collapse>
@@ -142,11 +142,11 @@ class Menulateral extends React.Component {
                 >
                   <div className="app__content">
                     <ul>
-                      <li><a href="">Teoria de l'art</a></li>
-                      <li><a href="">Història de l'art</a></li>
-                      <li><a href="">Art no occidental</a></li>
-                      <li><a href="">Modernisme / art nouveau</a></li>
-                      <li><a href="">Art déco</a></li>
+                      <li><a href="/#">Teoria de l'art</a></li>
+                      <li><a href="/#">Història de l'art</a></li>
+                      <li><a href="/#">Art no occidental</a></li>
+                      <li><a href="/#">Modernisme / art nouveau</a></li>
+                      <li><a href="/#">Art déco</a></li>
                     </ul>
                   </div>
                 </Collapse>
