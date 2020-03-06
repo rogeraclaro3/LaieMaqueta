@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
-import Menu from '../menu/Menu';
+import Menu from '../menu/Menunou';
 import Slider from './slider/Slider';
 import RecomanatsLlibre from './recomanats-llibre/RecomanatsLlibre';
 import RecomanatsGrans from './recomanats/RecomanatsGrans';
