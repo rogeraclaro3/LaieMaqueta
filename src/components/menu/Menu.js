@@ -57,9 +57,11 @@ class Menu extends React.Component {
                 </div>
               </li>
               <li className="item">
-                <button className="btn menu btn-user" data-type="user">
-                  <FontAwesomeIcon icon={faUser} />
-                </button>
+                <Link className="dropbtn" to="/accedir">
+                  <button className="btn menu btn-user" data-type="user">
+                    <FontAwesomeIcon icon={faUser} />
+                  </button>
+                </Link>
               </li>
               <li>|</li>
               <li className="item">

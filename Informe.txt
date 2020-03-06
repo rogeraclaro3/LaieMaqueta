@@ -1,0 +1,44 @@
+Planes maquetades:
+
+1-HOMEPAGE – 1.svg
+1-HOMEPAGE – 3.svg
+1-HOMEPAGE_POP UP NL.svg
+
+https://5e60ed220dd3a70007dbfe4e--aclaro-laie.netlify.com/#/
+
+- falta implementar menu desplegable
+
+4_resultats busqueda.svg
+5-llistat_categoria llibres.svg
+6_llistat_subcategoria_llibres.svg
+
+https://5e60ed220dd3a70007dbfe4e--aclaro-laie.netlify.com/#/searchres
+
+7-Fitxa_llibre.svg
+
+https://5e60ed220dd3a70007dbfe4e--aclaro-laie.netlify.com/#/llibre
+
+8-llistat_categoria objectes.svg
+
+https://5e60ed220dd3a70007dbfe4e--aclaro-laie.netlify.com/#/objectes
+
+9-Fitxa_objecte.svg
+
+https://5e60ed220dd3a70007dbfe4e--aclaro-laie.netlify.com/#/objecte
+
+Planes que falten:
+
+- Totes les "https-www.laie.es/...":
+Pero son molt senzilles de fer, calculo que aquesta tarda les faig totes
+
+- Les planes de la "Cart" mobile ("iPhone X-XS-11 Pro..."):
+També bastant senzilles, però amb una mica més de feina de maquetació "fina"
+
+Del que queda calculo que el menu desplegable es el que em donarà més feina.
+
+Nota: Quan estiguis a la home, pots fer click a:
+- la lupa del buscador
+- al menu "llibres" "objectes" i "agenda" (això ultim es un apaño provisional per veure la fitxa d'objectes)
+- al boto "comprar" del primer item de "regala millor amb laie"
+
+Es flipant lo ràpid que va en canviar de plana (de fet no canvia de plana el que fa es carregar només les parts(components) que necessita), React rules!!!

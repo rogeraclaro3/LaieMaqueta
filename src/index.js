@@ -15,12 +15,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 // planes de la web
-import ScrollToTop from './componentes/scrolltotop/Scrolltop';
-import Home from './componentes/home/Home';
-import SearchRes from './componentes/searchres/SearchRes';
-import Objectes from './componentes/objectes/Objectes';
-import Llibre from './componentes/llibre/Llibre';
-import Objecte from './componentes/objecte/Objecte';
+import ScrollToTop from './components/scrolltotop/Scrolltop';
+import Home from './components/home/Home';
+import SearchRes from './components/searchres/SearchRes';
+import Objectes from './components/objectes/Objectes';
+import Llibre from './components/llibre/Llibre';
+import Objecte from './components/objecte/Objecte';
+
+// planes Usuaris
+import Accedir from './components/usuaris/Accedir';
+import ContrassenyaRecordar from './components/usuaris/Contrassenya-recordar';
+import BaixaDades from './components/usuaris/Baixa-dades';
+import Registre from './components/usuaris/Registre';
+import Rrhh from './components/usuaris/Rrhh';
+import Targeta from './components/usuaris/Targeta';
+import Targetathk from './components/usuaris/Targetathk';
+import Baixathk from './components/usuaris/Baixathk';
+import Rrhhthk from './components/usuaris/Rrhhthk';
+import Registrethk from './components/usuaris/Registrethk';
+import Contrassenyathk from './components/usuaris/Contrassenyathk';
+import Contactethk from './components/usuaris/Contactethk';
+import Contacte from './components/usuaris/Contacte';
 
 // config de les rutes de la web
 ReactDOM.render (
@@ -33,6 +48,19 @@ ReactDOM.render (
         <Route path="/objectes" component={Objectes} />
         <Route path="/llibre" component={Llibre} />
         <Route path="/objecte" component={Objecte} />
+        <Route path="/accedir" component={Accedir} />
+        <Route path="/contrassenya-recordar" component={ContrassenyaRecordar} />
+        <Route path="/baixa-dades" component={BaixaDades} />
+        <Route path="/registre" component={Registre} />
+        <Route path="/rrhh" component={Rrhh} />
+        <Route path="/targeta" component={Targeta} />
+        <Route path="/targetathk" component={Targetathk} />
+        <Route path="/baixathk" component={Baixathk} />
+        <Route path="/rrhhthk" component={Rrhhthk} />
+        <Route path="/registrethk" component={Registrethk} />
+        <Route path="/contrassenyathk" component={Contrassenyathk} />
+        <Route path="/contactethk" component={Contactethk} />
+        <Route path="/contacte" component={Contacte} />
       </Switch>
     </div>
     </ScrollToTop>
