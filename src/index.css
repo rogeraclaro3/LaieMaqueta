@@ -26,6 +26,7 @@
 body {
   margin: 0;
   font-family: 'Poppins Regular', sans-serif;
+  /*font-size: 14px;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #002343;
@@ -1423,4 +1424,62 @@ button.app__toggle.app__toggle_subsub {
 .usuari .boto_submit_seguir {
   display: block;
   text-align: center;
+}
+
+
+/******* Menu *****/
+
+.fons-menu {
+  position: relative;
+  top: -62px;
+  background-color: #fff;
+  z-index: 999;
+  background-color: rgba(254, 254, 254, 1);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menullibres {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 30px 0 30px;
+  line-height: 30px;
+}
+
+.menullibres ul {
+  width: 416px;
+  border-right: 1px solid #002343;
+}
+
+.menullibres ul li:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.menullibres ul li {
+  list-style: none;
+}
+
+.menullibres ul li:nth-child(1),
+.menullibres ul li:nth-child(2) {
+  text-decoration: underline;
+}
+
+.menullibres ul li a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.divider {
+  position: relative;
+}
+
+.arrow-up {
+  position: absolute;
+  top: 17px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 12px solid #fff;
 }

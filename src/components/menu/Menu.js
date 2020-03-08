@@ -4,7 +4,32 @@ import logolaie from './logo-laie.png';
 import cerca from './cerca.png';
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 class Menu extends React.Component {
+
+	constructor() {
+		super();
+		this.state = {
+			showMenu: false,
+		};
+		this.showMenu = this.showMenu.bind(this);
+		this.closeMenu = this.closeMenu.bind(this);
+	}
+
+	showMenu(event) {
+		event.preventDefault();
+		this.setState({ showMenu: true }, () => {
+			document.addEventListener('click', this.closeMenu);
+		});
+	}
+
+	closeMenu(event) {
+		if (!this.dropdownMenu.contains(event.target)) {
+			this.setState({ showMenu: false }, () => {
+				document.removeEventListener('click', this.closeMenu);
+			});
+		}
+	}
 
   render() {
   	return (
@@ -14,13 +39,24 @@ class Menu extends React.Component {
             <Link to="/"><img src={logolaie} alt="Laie logo" /></Link>
           </div>
           <ul id="main-nav-list">
-            <li className="dropdown">
-              <Link className="dropbtn" to="/llibre">Llibres</Link>
-              {/* <div className="dropdown-content">
-                <a href="/#">Link 1</a>
-                <a href="/#">Link 2</a>
-                <a href="/#">Link 3</a>
-              </div> */}
+            <li>
+							<a href="/#" onClick={this.showMenu} >Llibres</a>
+              {
+                this.state.showMenu
+                  ? (
+                    <div
+                      className="divider"
+                      ref={(element) => {
+                        this.dropdownMenu = element;
+                      }}
+                    >
+                      <div className="arrow-up"></div>
+                    </div>
+                  )
+                  : (
+                    null
+                  )
+              }
             </li>
             <li>
               <Link className="dropbtn" to="/objectes">Objectes</Link>
@@ -65,7 +101,7 @@ class Menu extends React.Component {
               </li>
               <li>|</li>
               <li className="item">
-                <a href="https://www.laie.es/cistella" className="btn menu btn-cart"><FontAwesomeIcon icon={faShoppingCart} /><em className="fa fa-shopping-cart" aria-hidden="true"></em><span data-cart-page="/cart/total" className="number">0</span></a>
+                <a href="/#" className="btn menu btn-cart"><FontAwesomeIcon icon={faShoppingCart} /><em className="fa fa-shopping-cart" aria-hidden="true"></em><span data-cart-page="/cart/total" className="number">0</span></a>
               </li>
                 <li>|</li>
               <li className="item">
@@ -75,6 +111,39 @@ class Menu extends React.Component {
           </div>
         </div>
         </div>
+        {
+          this.state.showMenu
+            ? (
+              <div
+                className="fons-menu"
+                ref={(element) => {
+                  this.dropdownMenu = element;
+                }}
+              >
+                <div className="menullibres">
+                  <ul>
+                    <li><a href="/#">Novetats</a></li>
+                    <li><a href="/#">Recomanats</a></li>
+                    <li><a href="/#">Art / arquitectura / disseny</a></li>
+                    <li><a href="/#">Comics / il.lustraci&oacute;</a></li>
+                    <li><a href="/#">Ci&egrave;ncies / tecnologia</a></li>
+                    <li><a href="/#">Cine / teatre / m&uacute;sica</a></li>
+                    <li><a href="/#">Poesia / cl&agrave;ssics</a></li>
+                    <li><a href="/#">Filosofia / religi&oacute; / mitologia</a></li>
+                    <li><a href="/#">Historia / antropologia</a></li>
+                    <li><a href="/#">Estudis i ci&egrave;ncies socials</a></li>
+                    <li><a href="/#">Lingu&iacute;stica / teoria / estudis literaris</a></li>
+                    <li><a href="/#">Narratives</a></li>
+                    <li><a href="/#">Oci</a></li>
+                    <li><a href="/#">Infantil i juvenil</a></li>
+                  </ul>
+                </div>
+              </div>
+            )
+            : (
+              null
+            )
+        }
       </header>
     )
   }

@@ -40,7 +40,7 @@ import Contacte from './components/usuaris/Contacte';
 // config de les rutes de la web
 ReactDOM.render (
   <Router>
-    <ScrollToTop >
+    <ScrollToTop>
     <div>
       <Switch>
         <Route exact path="/" component={Home} />

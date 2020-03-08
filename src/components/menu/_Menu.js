@@ -1,26 +1,55 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
+import logolaie from './logo-laie.png';
 import cerca from './cerca.png';
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Menu extends React.Component {
-	render() {
-		return (
-				<div className="container">
+
+  render() {
+  	return (
+      <header className="container-fluid">
+        <nav role="container navigation" className="main-nav" id="main-nav">
+          <div className="top-nav-logo">
+            <Link to="/"><img src={logolaie} alt="Laie logo" /></Link>
+          </div>
+          <ul id="main-nav-list">
+            <li className="dropdown">
+              <Link className="dropbtn" to="/llibres">Llibres</Link>
+            </li>
+            <li>
+              <Link className="dropbtn" to="/objectes">Objectes</Link>
+            </li>
+            <li>
+              <Link className="dropbtn" to="/objecte">Agenda</Link>
+            </li>
+            <li>
+              <a href="/#">Magazine</a>
+            </li>
+            <li>
+              <a href="/#">On som</a>
+            </li>
+            <li>
+              <a href="/#">Qui som</a>
+            </li>
+          </ul>
+        </nav>
+        <div className="header-bottom">
+        <div className="container">
           <div className="wrap">
             <ul className="options">
               <li className="item">
                 <div className="search" data-type="search-form">
                   <form id="search" className="form" action="https://www.laie.es/search" method="get">
-                    <input type="cerca" className="form-control-cerca" id="Cerca" placeholder="Qu&egrave; est&agrave;s buscant?" required />
+                    <input type="cerca" className="form-control-cerca" id="Cerca" placeholder="Què estàs buscant?" required />
                       <Link to="/searchres"><input type="image" src={cerca} border="0" alt="Submit" className="bcerca"/></Link>
                   </form>
                 </div>
               </li>
               <li className="item">
                 <div className="lnk-buscador-avanzado hidden-xs visible-sm">
-                  <a href="/#" className="bCercaAv">Cercador avan&ccedil;at</a>
+                  <a href="/#" className="bCercaAv">Cercador avançat</a>
                 </div>
               </li>
               <li className="item">
@@ -41,7 +70,10 @@ class Menu extends React.Component {
             </ul>
           </div>
         </div>
+        </div>
+      </header>
     )
   }
 }
+
 export default Menu;
