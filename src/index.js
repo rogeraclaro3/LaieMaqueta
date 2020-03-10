@@ -37,6 +37,10 @@ import Contrassenyathk from './components/usuaris/Contrassenyathk';
 import Contactethk from './components/usuaris/Contactethk';
 import Contacte from './components/usuaris/Contacte';
 
+//planes cistella
+import Cistella from './components/cistella/Cistella';
+
+
 // config de les rutes de la web
 ReactDOM.render (
   <Router>
@@ -61,6 +65,7 @@ ReactDOM.render (
         <Route path="/contrassenyathk" component={Contrassenyathk} />
         <Route path="/contactethk" component={Contactethk} />
         <Route path="/contacte" component={Contacte} />
+        <Route path="/cistella" component={Cistella} />
       </Switch>
     </div>
     </ScrollToTop>

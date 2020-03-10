@@ -1483,3 +1483,160 @@ button.app__toggle.app__toggle_subsub {
   border-right: 8px solid transparent;
   border-bottom: 12px solid #fff;
 }
+
+/****** Cistella ******/
+
+/* .pedido_resumen {
+  display: inline-block;
+  width: 100%;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.pedido_resumen .thumb-cart {
+  width: 15%;
+  float: left;
+  display: inline-block;
+}
+
+.pedido_resumen .prod {
+  width: 40%;
+  float: left;
+  display: inline-block;
+}
+
+.pedido_resumen .cantidad {
+  width: 15%;
+  float: left;
+  display: inline-block;
+  text-align: right;
+}
+
+.pedido_resumen .prod .stock {
+  margin-bottom: 2rem;
+  color: green;
+}
+
+.pedido_resumen .cantidad .number-spinner {
+  width: 50px;
+  float: right;
+  top: -5px;
+} */
+
+.pedido_resumen .thumb-cart img {
+  width: 100%;
+  height: auto;
+}
+
+.pedido_resumen .prod .stock {
+  color: green;
+}
+
+.pedido_resumen p {
+  margin-bottom: 0;
+}
+
+.pedido_resumen button {
+  border-radius: 0;
+  border: 0;
+}
+
+.pedido_resumen input.form-control {
+  width: 2.6rem !important;
+  text-align: center;
+  margin-right: .15rem;
+  border: 1px solid #cccccc !important;
+  padding: 2px 0 2px 12px;
+  width: -38px;
+  height: 30px;
+  margin: -10px 5px 0 5px;
+}
+
+.pedido_resumen .titol {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: none;
+  border-bottom: 1px solid #002343;
+  margin-bottom: 1rem;
+}
+
+.pedido_resumen .titol2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: none;
+  margin-bottom: 1rem;
+}
+
+.pedido_resumen .icona {
+  font-size: 20px;
+}
+
+.pedido_resumen .icona {
+  background: linear-gradient(to bottom, white calc(50% - 1px), black calc(50% - 1px) calc(50% + 1px), white calc(50% + 1px));
+  margin: 0 1px 0 1px;
+}
+
+.pedido_resumen .fons-icona {
+  background-color: white;
+  margin: 0 auto;
+  padding: 5px;
+  width: 42px;
+  border-radius: 30px;
+  border: 1px solid #002345;
+  display: block;
+}
+
+.pedido_resumen .fons-icona svg {
+  opacity: .4;
+}
+
+.pedido_resumen .fons-icona.actiu svg {
+  opacity: 1;
+}
+
+.pedido_resumen .divisio {
+  height: 20px;
+  border-bottom: 1px solid #002345;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pedido_resumen .resum {
+  border: 1px solid black;
+  margin: 0 1px 0 1px;
+  padding: 1rem 0;
+}
+
+.pedido_resumen .ratlleta-abaix {
+  border-bottom: 1px solid #002345;
+}
+
+.pedido_resumen .ratlleta-adalt {
+  border-top: 1px solid #002345;
+}
+
+.pedido_resumen .btn-primary {
+  background-color: #f49331;
+  border-color: #f49331;
+  width: 100%;
+  font-family: 'Poppins Black';
+  font-size: 14px;
+  border-radius: .25rem;
+}
+
+.pedido_resumen .btn-buit {
+  background-color: white;
+  border: 2px solid #002343;
+  color: #002343;
+  border-radius: .25rem;
+}
+
+.pedido_resumen .btn-primary:hover {
+  color: #fff;
+  background-color: #083d6d;
+  border-color: #083d6d;
+}
+
+.pedido_resumen .fluix {
+  color: #b3b3b3;
+}
