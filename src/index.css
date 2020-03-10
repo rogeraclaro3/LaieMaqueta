@@ -514,7 +514,8 @@ li.dropdown {
 }
 
 .card-text {
-  font-family: 'Poppins Extralight';
+  font-family: 'Poppins Regular';
+  /*font-family: 'Poppins Extralight';*/
   font-size: 16px;
 }
 
@@ -1485,43 +1486,13 @@ button.app__toggle.app__toggle_subsub {
 }
 
 /****** Cistella ******/
-
-/* .pedido_resumen {
-  display: inline-block;
-  width: 100%;
-  font-weight: 100;
-  font-size: 14px;
-}
-
-.pedido_resumen .thumb-cart {
-  width: 15%;
-  float: left;
-  display: inline-block;
-}
-
-.pedido_resumen .prod {
-  width: 40%;
-  float: left;
-  display: inline-block;
+.pedido_resumen a {
+  text-decoration: none;
 }
 
 .pedido_resumen .cantidad {
-  width: 15%;
-  float: left;
-  display: inline-block;
-  text-align: right;
+  color: #f49331;
 }
-
-.pedido_resumen .prod .stock {
-  margin-bottom: 2rem;
-  color: green;
-}
-
-.pedido_resumen .cantidad .number-spinner {
-  width: 50px;
-  float: right;
-  top: -5px;
-} */
 
 .pedido_resumen .thumb-cart img {
   width: 100%;
@@ -1604,7 +1575,7 @@ button.app__toggle.app__toggle_subsub {
 .pedido_resumen .resum {
   border: 1px solid black;
   margin: 0 1px 0 1px;
-  padding: 1rem 0;
+  padding: 0.5rem 0 1rem 0;
 }
 
 .pedido_resumen .ratlleta-abaix {
