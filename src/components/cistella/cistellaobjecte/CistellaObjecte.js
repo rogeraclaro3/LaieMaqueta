@@ -9,7 +9,7 @@ class CistellaObjecte extends React.Component {
 			<>
 			<div className="row">
 				<div className="col-12">
-					<span className="titol"><FontAwesomeIcon icon={faShoppingCart} /> &nbsp;&nbsp;La teva cistella</span>
+					<span className="titol sotatitol"><FontAwesomeIcon icon={faShoppingCart} /> &nbsp;&nbsp;La teva cistella</span>
 				</div>
 			</div>
 

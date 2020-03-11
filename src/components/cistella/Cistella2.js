@@ -2,7 +2,7 @@ import React from 'react';
 import MenuCistella from '../menu/MenuCistella';
 import Cistellacap from './cistellacap/CistellaCap';
 import Cistellaobjecte from './cistellaobjecte/CistellaObjecte';
-import Cistellaresum from './cistellaresum/CistellaResum';
+import Cistellaresum from './cistellaresum/CistellaResumBonus';
 import Cistellapeu from './cistellapeu/CistellaPeu';
 
 class CistellaResum extends React.Component {

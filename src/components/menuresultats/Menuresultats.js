@@ -1,8 +1,6 @@
 import React from "react";
 import cx from "classnames";
 import Collapse from "@kunukn/react-collapse";
-//import { Typeahead } from 'react-bootstrap-typeahead';
-//import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 class Menulateral extends React.Component {
   state = {

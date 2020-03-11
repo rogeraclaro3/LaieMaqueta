@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
 class CistellaResum extends React.Component {
@@ -31,7 +32,7 @@ class CistellaResum extends React.Component {
 						</div>
 					</div>
 					<div className="col-12">
-						<Button variant="primary">FINALITZAR COMPRA</Button>
+						<Link to="/cistella2"><Button variant="primary">FINALITZAR COMPRA</Button></Link>
 					</div>
 				</div>
 			</>

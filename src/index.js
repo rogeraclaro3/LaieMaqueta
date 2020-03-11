@@ -39,7 +39,10 @@ import Contacte from './components/usuaris/Contacte';
 
 //planes cistella
 import Cistella from './components/cistella/Cistella';
-
+import Cistella2 from './components/cistella/Cistella2';
+import Cistella3 from './components/cistella/Cistella3';
+import Cistella4 from './components/cistella/Cistella4';
+import Cistella5 from './components/cistella/Cistella5';
 
 // config de les rutes de la web
 ReactDOM.render (
@@ -66,6 +69,11 @@ ReactDOM.render (
         <Route path="/contactethk" component={Contactethk} />
         <Route path="/contacte" component={Contacte} />
         <Route path="/cistella" component={Cistella} />
+        <Route path="/cistella2" component={Cistella2} />
+        <Route path="/cistella3" component={Cistella3} />
+        <Route path="/cistella4" component={Cistella4} />
+        <Route path="/cistella5" component={Cistella5} />
+
       </Switch>
     </div>
     </ScrollToTop>

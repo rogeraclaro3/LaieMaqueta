@@ -1,41 +1,34 @@
 import React from 'react';
 import MenuCistella from '../menu/MenuCistella';
-import Cistellacap from './cistellacap/CistellaCap';
-import Cistellaobjecte from './cistellaobjecte/CistellaObjecte';
-import Cistellaresum from './cistellaresum/CistellaResum';
+import Cistellacap from './cistellacap/CistellaCapEntrega';
+import Cistellaentrega from './cistellaentrega/CistellaEntrega';
+import Cistellaresum from './cistellaresum/CistellaResumBonus';
 import Cistellapeu from './cistellapeu/CistellaPeu';
 
-class CistellaResum extends React.Component {
+class CistellaUsuari extends React.Component {
 	render() {
 		return(
 			<>
 			<MenuCistella />
 				<main role="main" className="inici-home pedido_resumen">
 					<div className="container">
-						<form name="cart" method="post" action="/#" class="user_form">
-							{/* Inici Capçalera */}
+						<form name="usuari" method="post" action="/#" className="user_form">
+							{/* Inici Capsalera */}
 							<Cistellacap />
-							{/* Fi Capçalera */}
+							{/* Fi Capsalera */}
 
 							{/* Inici Columna 1 */}
 							<div className="row">
-								<div className="col-12 col-lg-8">
-									<Cistellaobjecte />
-									<div className="row">
-										<div className="col-12">
-											<div className="divisio"></div>
-										</div>
-									</div>
+								<div className="col-12 col-lg-8 separab30">
+									<Cistellaentrega />
 								</div>
 								{/* Fi Columna 1 */}
-
 								{/* Inici Columna 2 */}
 								<div className="col-12 col-lg-4">
 									<Cistellaresum />
 								</div>
 							</div>
 							{/* Fi Columna 2 */}
-
 							{/* Inici Peu */}
 							<Cistellapeu />
 							{/* Fi Peu */}
@@ -47,4 +40,4 @@ class CistellaResum extends React.Component {
 	}
 }
 
-export default CistellaResum;
+export default CistellaUsuari;
