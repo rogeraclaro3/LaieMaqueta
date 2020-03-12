@@ -1729,3 +1729,23 @@ input[type=radio] {
 .pedido_resumen .recollida.select2 {
   border-top: 0;
 }
+
+.pedido_resumen .interior-botiga {
+  font-size: 12px;
+  padding: 1rem;
+}
+
+.pedido_resumen .requadre {
+  border: 1px solid #002343;
+  background-color: #f6f7f9;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.pedido_resumen .requadre:hover {
+  border: 1px solid #002343;
+  background-color: #002343;
+  color: #fff;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}

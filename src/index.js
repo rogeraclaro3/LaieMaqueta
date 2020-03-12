@@ -43,6 +43,10 @@ import Cistella2 from './components/cistella/Cistella2';
 import Cistella3 from './components/cistella/Cistella3';
 import Cistella4 from './components/cistella/Cistella4';
 import Cistella5 from './components/cistella/Cistella5';
+import Cistella6 from './components/cistella/Cistella6';
+import Cistella7 from './components/cistella/Cistella7';
+import Cistella8 from './components/cistella/Cistella8';
+
 
 // config de les rutes de la web
 ReactDOM.render (
@@ -73,6 +77,9 @@ ReactDOM.render (
         <Route path="/cistella3" component={Cistella3} />
         <Route path="/cistella4" component={Cistella4} />
         <Route path="/cistella5" component={Cistella5} />
+        <Route path="/cistella6" component={Cistella6} />
+        <Route path="/cistella7" component={Cistella7} />
+        <Route path="/cistella8" component={Cistella8} />
 
       </Switch>
     </div>
