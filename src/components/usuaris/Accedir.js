@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { Button, Form, Col } from 'react-bootstrap';
 import Menu from '../menu/Menu';
 import Newsletter from '../home/newsletter/Newsletter';
@@ -24,22 +25,22 @@ class Llibre extends React.Component {
 										<Form.Label>Contrassenya</Form.Label>
 										<Form.Control type="password" />
 									</Form.Group>
-									<span className="text_form"><a href="/#">Has oblidat la contrassenya?</a></span>
+									<span className="text_form"><Link to="/contrassenya-recordar">Has oblidat la contrassenya?</Link></span>
 									<div className="boto_submit">
-									<Button variant="primary" type="submit">
+									<Link to="/privat/ebooks"><Button variant="primary" type="submit">
 										ACCEDIR
-								  </Button>
+								  </Button></Link>
 									</div>
 								</Form>
 							</div>
 							<div className="col-md-12 col-lg-6">
 								<Form className="card">
 									<span className="card-title h5">Crea un compte nou</span>
-									<span className="text_form">Si encara no tens un compte d’usuari a Laie, utilitza aquesta opció per accedir al formulari de registre.</span>
+									<span className="text_form">Si encara no tens un compte d'usuari a Laie, utilitza aquesta opció per accedir al formulari de registre.</span>
 									<div className="boto_submit">
-									<Button variant="primary" type="submit">
+									<Link to="/registre"><Button variant="primary" type="submit">
 										CREAR COMPTE
-								  </Button>
+								  </Button></Link>
 									</div>
 								</Form>
 							</div>

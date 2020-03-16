@@ -1,15 +1,15 @@
 import React from 'react';
 import {Card, Button} from 'react-bootstrap';
-import FotoRegala01 from './regala01.jpg';
-import FotoRegala02 from './regala02.jpg';
+import Foto01 from './llibre01.jpg';
+import Foto02 from './regala02.jpg';
 
-class Regala extends React.Component {
+class FavoritsLlista extends React.Component {
   render() {
     return (
-			<div className="row separab30">
+			<div className="row separab30 favorits">
 				<div className="col-lg-4">
-					<Card className="regala_card_llibre">
-						<Card.Img variant="top" src={FotoRegala01} />
+					<Card className="favorits_card">
+						<Card.Img variant="top" src={Foto01} />
 						<Card.Body>
 							<Card.Title className="regala_titol">Bol blanco Inca Oyoy</Card.Title>
 							<Card.Text>
@@ -20,8 +20,8 @@ class Regala extends React.Component {
 					</Card>
 				</div>
 				<div className="col-lg-4">
-					<Card className="regala_card_llibre">
-						<Card.Img variant="top" src={FotoRegala02} />
+					<Card className="favorits_card">
+						<Card.Img variant="top" src={Foto02} />
 						<Card.Body>
 							<Card.Title className="regala_titol">Camiseta bicicleta Oriol Maspons</Card.Title>
 							<Card.Text>
@@ -32,8 +32,8 @@ class Regala extends React.Component {
 					</Card>
 				</div>
 				<div className="col-lg-4">
-					<Card className="regala_card_llibre">
-						<Card.Img variant="top" src={FotoRegala01} />
+					<Card className="favorits_card">
+						<Card.Img variant="top" src={Foto01} />
 						<Card.Body>
 							<Card.Title className="regala_titol">Bol blanco Inca Oyoy</Card.Title>
 							<Card.Text>
@@ -48,4 +48,4 @@ class Regala extends React.Component {
   }
 }
 
-export default Regala;
+export default FavoritsLlista;

@@ -102,9 +102,7 @@ class Menu extends React.Component {
               <li>|</li>
               <li className="item">
                 <Link className="btn menu btn-cart" to="/cistella">
-                  <a href="/#">
-                    <FontAwesomeIcon icon={faShoppingCart} /><em className="fa fa-shopping-cart" aria-hidden="true"></em><span data-cart-page="/cart/total" className="number">0</span>
-                  </a>
+                  <FontAwesomeIcon icon={faShoppingCart} /><em className="fa fa-shopping-cart" aria-hidden="true"></em><span data-cart-page="/cart/total" className="number">0</span>
                 </Link>
               </li>
                 <li>|</li>

@@ -51,6 +51,7 @@ code {
 header {
   background: #002343;
   height: 88px;
+  position: relative;
   /*
   position: fixed;
   top: 0;
@@ -217,6 +218,10 @@ li.dropdown {
   margin-top: 120px;
 }
 
+.separav120_pad {
+  padding-top: 120px;
+}
+
 .separav60 {
   margin-top: 60px;
 }
@@ -239,6 +244,10 @@ li.dropdown {
 
 .separab120 {
   margin-bottom: 120px;
+}
+
+.separab120_pad {
+  padding-bottom: 120px;
 }
 
 .separab60 {
@@ -1690,6 +1699,7 @@ input[type=radio] {
   margin: 10px 0px 10px 0px;
   border-radius: 6px;
 }
+
 .pedido_resumen .anivella-boto {
   margin-top: 0.6rem;
   margin-left: 0.5rem;
@@ -1748,4 +1758,178 @@ input[type=radio] {
   color: #fff;
   padding: 0.5rem;
   margin: 1rem 0;
+}
+
+/**** Part privada ****/
+
+.espai_usuari {
+  background-color: #F8F9FB;
+}
+
+.espai_usuari .quadrat_blanc {
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+
+.espai_usuari .titol {
+  font-size: 20px;
+  text-transform: none;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  display: inline-block;
+}
+
+.espai_usuari .text {
+  font-family: 'Poppins Regular';
+  font-size: 12px;
+  display: block;
+}
+
+.espai_usuari .text_seguit {
+  font-family: 'Poppins Regular';
+  font-size: 12px;
+}
+
+.espai_usuari .icona_titol_gran {
+  font-size: 32px;
+  display: inline-block;
+}
+
+.espai_usuari .salutacio {
+  padding-left: 20px;
+  font-size: 11px;
+  display: inline-block;
+}
+
+.espai_usuari .salutacio .usuari {
+  font-family: 'Poppins Bold';
+  font-size: 16px;
+}
+
+.espai_usuari .punts_usuari.text {
+  padding-top: 22px;
+  font-size: 14px;
+}
+
+.espai_usuari .seccio {
+  border-bottom:  1px solid #F8F9FB;
+  font-size: 14px;
+  padding: 1rem;
+}
+
+.espai_usuari .seccio:hover {
+  color: #F49331;
+  border-left: 2px solid #F49331;
+  padding-left: 0.87rem;
+}
+
+.espai_usuari a.activa .seccio {
+  color: #F49331;
+  border-left: 2px solid #F49331;
+  padding-left: 0.87rem;
+}
+
+.espai_usuari a {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.espai_usuari .contingut {
+  padding: 2rem;
+}
+
+.espai_usuari .icona_menu {
+    font-size: 25px;
+    display: inline-block;
+    width: 40px;
+}
+
+.espai_usuari .gira {
+  transform: rotate(180deg);
+  padding-right: 0;
+  padding-left: 1rem;
+}
+
+.espai_usuari .btn-buit {
+  background-color: white;
+  border: 2px solid #002343;
+  color: #002343;
+}
+.espai_usuari .btn-buit:hover {
+  color: #fff;
+}
+
+.espai_usuari .adresa_titol {
+  font-family: 'Poppins Bold';
+  font-size: 15px;
+  color: #F49331;
+}
+
+.espai_usuari .adresa_edit {
+  font-size: 12px;
+  padding-left: 2rem;
+}
+
+.espai_usuari .adresa_text {
+  font-size: 15px;
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.espai_usuari .adresa_peutext {
+  font-size: 12px;
+  color: #9C9C9C;
+  display: block;
+  padding-top: 1rem;
+}
+
+.espai_usuari .enrere {
+  font-family: 'Poppins Bold';
+  font-size: 14px;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.usuari span.titol_camp, .usuari .nova .form-label, .usuari .edita .form-label {
+  display: block;
+  font-family: 'Poppins Bold';
+  font-size: 14px;
+}
+
+.espai_usuari .edita {
+  padding-top: 2rem;
+}
+
+.espai_usuari .card {
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.espai_usuari .favorits {
+  padding-top: 2rem;
+}
+
+.espai_usuari .usuari .favorits .btn-primary {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.espai_usuari .usuari .card-title.h5 {
+    font-family: 'Poppins Black';
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.espai_usuari .usuari .favorits_card .card-text {
+    font-family: 'Poppins Regular';
+    font-size: 16px;
+    text-align: right;
+    color: #f49331;
+}
+
+.espai_usuari .usuari p.card-text {
+    margin-bottom: 0;
 }

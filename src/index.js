@@ -47,8 +47,15 @@ import Cistella6 from './components/cistella/Cistella6';
 import Cistella7 from './components/cistella/Cistella7';
 import Cistella8 from './components/cistella/Cistella8';
 
+//planes espai privat
+import PrivatEbooks from './components/usuaris/privat/Ebooks';
+import PrivatAdreces from './components/usuaris/privat/Adreces';
+import PrivatAdrecesAfegir from './components/usuaris/privat/AdrecesAfegir';
+import PrivatDades from './components/usuaris/privat/Dades';
+import PrivatContrassenya from './components/usuaris/privat/Contrassenya';
+import PrivatFavorits from './components/usuaris/privat/Favorits';
 
-// config de les rutes de la web
+//config de les rutes de la web
 ReactDOM.render (
   <Router>
     <ScrollToTop>
@@ -80,6 +87,12 @@ ReactDOM.render (
         <Route path="/cistella6" component={Cistella6} />
         <Route path="/cistella7" component={Cistella7} />
         <Route path="/cistella8" component={Cistella8} />
+        <Route path="/privat/ebooks" component={PrivatEbooks} />
+        <Route path="/privat/adreces" component={PrivatAdreces} />
+        <Route path="/privat/adrecesafegir" component={PrivatAdrecesAfegir} />
+        <Route path="/privat/dades" component={PrivatDades} />
+        <Route path="/privat/contrassenya" component={PrivatContrassenya} />
+        <Route path="/privat/favorits" component={PrivatFavorits} />
 
       </Switch>
     </div>
