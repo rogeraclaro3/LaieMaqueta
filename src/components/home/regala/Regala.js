@@ -12,11 +12,11 @@ class Regala extends React.Component {
     return (
         <div className="container separav60 separab60">
 						<div className="row">
-							<div className="col-lg-6"><img src={Icona} className="icona-align" alt="icona" /><h4>Regala millor amb Laie</h4></div>
-							<div className="col-lg-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
+							<div className="col-9 col-md-9 col-xl-6"><img src={Icona} className="icona-align" alt="icona" /><h4>Regala millor amb Laie</h4></div>
+							<div className="col-3 col-md-3 col-xl-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
 						</div>
             <div className="row">
-                <div className="col-lg-3">
+                <div className="col-6 col-lg-3 separab30">
 									<Card className="regala_card_llibre">
 										<Card.Img variant="top" src={FotoRegala01} />
 										<Card.Body>
@@ -28,7 +28,7 @@ class Regala extends React.Component {
 										</Card.Body>
 									</Card>
                 </div>
-								<div className="col-lg-3">
+								<div className="col-6 col-lg-3 separab30">
 									<Card className="regala_card_llibre">
 										<Card.Img variant="top" src={FotoRegala02} />
 										<Card.Body>
@@ -40,7 +40,7 @@ class Regala extends React.Component {
 										</Card.Body>
 									</Card>
 								</div>
-                <div className="col-lg-3">
+								<div className="col-6 col-lg-3 separab30">
 									<Card className="regala_card_llibre">
 										<Card.Img variant="top" src={FotoRegala01} />
 										<Card.Body>
@@ -52,7 +52,7 @@ class Regala extends React.Component {
 										</Card.Body>
 									</Card>
                 </div>
-								<div className="col-lg-3">
+								<div className="col-6 col-lg-3 separab30">
 									<Card className="regala_card_llibre">
 										<Card.Img variant="top" src={FotoRegala02} />
 										<Card.Body>
@@ -65,56 +65,6 @@ class Regala extends React.Component {
 									</Card>
 								</div>
             </div>
-						<div className="row separav30">
-								<div className="col-lg-3">
-									<Card className="regala_card_llibre">
-										<Card.Img variant="top" src={FotoRegala02} />
-										<Card.Body>
-											<Card.Title className="regala_titol">Camiseta bicicleta Oriol Maspons</Card.Title>
-											<Card.Text>
-												25,00&euro;
-											</Card.Text>
-											<Button variant="primary">COMPRAR</Button>
-										</Card.Body>
-									</Card>
-								</div>
-                <div className="col-lg-3">
-									<Card className="regala_card_llibre">
-										<Card.Img variant="top" src={FotoRegala01} />
-										<Card.Body>
-											<Card.Title className="regala_titol">Bol blanco Inca Oyoy</Card.Title>
-											<Card.Text>
-												25,00&euro;
-											</Card.Text>
-											<Button variant="primary">COMPRAR</Button>
-										</Card.Body>
-									</Card>
-                </div>
-								<div className="col-lg-3">
-									<Card className="regala_card_llibre">
-										<Card.Img variant="top" src={FotoRegala02} />
-										<Card.Body>
-											<Card.Title className="regala_titol">Camiseta bicicleta Oriol Maspons</Card.Title>
-											<Card.Text>
-												25,00&euro;
-											</Card.Text>
-											<Button variant="primary">COMPRAR</Button>
-										</Card.Body>
-									</Card>
-								</div>
-                <div className="col-lg-3">
-									<Card className="regala_card_llibre">
-										<Card.Img variant="top" src={FotoRegala01} />
-										<Card.Body>
-											<Card.Title className="regala_titol">Bol blanco Inca Oyoy</Card.Title>
-											<Card.Text>
-												25,00&euro;
-											</Card.Text>
-											<Button variant="primary">COMPRAR</Button>
-										</Card.Body>
-									</Card>
-                </div>
-						</div>
         </div>
     )
   }

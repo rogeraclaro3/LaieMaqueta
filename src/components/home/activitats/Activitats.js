@@ -45,8 +45,8 @@ class Activitats extends React.Component {
     return (
         <div className="container separav60">
         <div className="row">
-					<div className="col-lg-6"><img src={Icona} className="icona-align" alt="icona" /><h4>Activitats i presentacions a Laie</h4></div>
-					<div className="col-lg-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
+					<div className="col-9 col-md-9 col-xl-6"><img src={Icona} className="icona-align" alt="icona" /><h4>Activitats i presentacions a Laie</h4></div>
+					<div className="col-3 col-md-3 col-xl-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
 				</div>
 				<Slider {...settings} className='carrussel'>
 

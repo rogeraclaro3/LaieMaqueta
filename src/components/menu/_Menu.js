@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import logolaie from './logo-laie.png';
 import cerca from './cerca.png';
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
@@ -7,18 +8,64 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Menu extends React.Component {
 
+	constructor() {
+		super();
+		this.state = {
+			showMenu: false,
+		};
+		this.showMenu = this.showMenu.bind(this);
+		this.closeMenu = this.closeMenu.bind(this);
+	}
+
+	showMenu(event) {
+		event.preventDefault();
+		this.setState({ showMenu: true }, () => {
+			document.addEventListener('click', this.closeMenu);
+		});
+	}
+
+	closeMenu(event) {
+		if (!this.dropdownMenu.contains(event.target)) {
+			this.setState({ showMenu: false }, () => {
+				document.removeEventListener('click', this.closeMenu);
+			});
+		}
+	}
+
   render() {
   	return (
       <header className="container-fluid">
-        <nav role="container navigation" className="main-nav" id="main-nav">
+
+        {/* <nav role="navigation" className="container main-nav navbar navbar-expand-lg navbar-dark" id="main-nav">
           <div className="top-nav-logo">
             <Link to="/"><img src={logolaie} alt="Laie logo" /></Link>
           </div>
-          <ul id="main-nav-list">
-            <li className="dropdown">
-              <Link className="dropbtn" to="/llibres">Llibres</Link>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="main-nav-list navbar-nav">
+            <li className="nav-item">
+							<a href="/#" onClick={this.showMenu} >Llibres</a>
+              {
+                this.state.showMenu
+                  ? (
+                    <div
+                      className="divider"
+                      ref={(element) => {
+                        this.dropdownMenu = element;
+                      }}
+                    >
+                      <div className="arrow-up"></div>
+                    </div>
+                  )
+                  : (
+                    null
+                  )
+              }
             </li>
-            <li>
+            <li className="nav-item">
               <Link className="dropbtn" to="/objectes">Objectes</Link>
             </li>
             <li>
@@ -34,9 +81,35 @@ class Menu extends React.Component {
               <a href="/#">Qui som</a>
             </li>
           </ul>
-        </nav>
-        <div className="header-bottom">
+          </div>
+        </nav> */}
+
         <div className="container">
+        <Navbar collapseOnSelect expand="lg" variant="dark">
+          <Navbar.Brand href="/"><img src={logolaie} alt="Laie logo" /></Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav.Link href="/#" onClick={this.showMenu}>Llibres</Nav.Link>
+              <Nav.Link href="/objectes">Objectes</Nav.Link>
+              <Nav.Link href="/objecte">Agenda</Nav.Link>
+              <Nav.Link href="/#">Magazine</Nav.Link>
+              <Nav.Link href="/#">On Som</Nav.Link>
+              <Nav.Link href="/#">Qui Som</Nav.Link>
+              {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+              </NavDropdown> */}
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+        </div>
+
+        <div className="header-bottom">
+          <div className="container">
           <div className="wrap">
             <ul className="options">
               <li className="item">
@@ -61,7 +134,9 @@ class Menu extends React.Component {
               </li>
               <li>|</li>
               <li className="item">
-                <a href="https://www.laie.es/cistella" className="btn menu btn-cart"><FontAwesomeIcon icon={faShoppingCart} /><em className="fa fa-shopping-cart" aria-hidden="true"></em><span data-cart-page="/cart/total" className="number">0</span></a>
+                <Link className="btn menu btn-cart" to="/cistella">
+                  <FontAwesomeIcon icon={faShoppingCart} /><em className="fa fa-shopping-cart" aria-hidden="true"></em><span data-cart-page="/cart/total" className="number">0</span>
+                </Link>
               </li>
                 <li>|</li>
               <li className="item">
@@ -71,6 +146,39 @@ class Menu extends React.Component {
           </div>
         </div>
         </div>
+        {
+          this.state.showMenu
+            ? (
+              <div
+                className="fons-menu"
+                ref={(element) => {
+                  this.dropdownMenu = element;
+                }}
+              >
+                <div className="menullibres">
+                  <ul>
+                    <li><a href="/#">Novetats</a></li>
+                    <li><a href="/#">Recomanats</a></li>
+                    <li><a href="/#">Art / arquitectura / disseny</a></li>
+                    <li><a href="/#">Comics / il.lustraci&oacute;</a></li>
+                    <li><a href="/#">Ci&egrave;ncies / tecnologia</a></li>
+                    <li><a href="/#">Cine / teatre / m&uacute;sica</a></li>
+                    <li><a href="/#">Poesia / cl&agrave;ssics</a></li>
+                    <li><a href="/#">Filosofia / religi&oacute; / mitologia</a></li>
+                    <li><a href="/#">Historia / antropologia</a></li>
+                    <li><a href="/#">Estudis i ci&egrave;ncies socials</a></li>
+                    <li><a href="/#">Lingu&iacute;stica / teoria / estudis literaris</a></li>
+                    <li><a href="/#">Narratives</a></li>
+                    <li><a href="/#">Oci</a></li>
+                    <li><a href="/#">Infantil i juvenil</a></li>
+                  </ul>
+                </div>
+              </div>
+            )
+            : (
+              null
+            )
+        }
       </header>
     )
   }

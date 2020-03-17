@@ -18,7 +18,7 @@ class MenuBottom extends React.Component {
 							<a className="thumb" title="" href="https://www.laie.es/"><img src={Logopeu} alt="laie" className="Logopeu" /></a>
 						</div>
 					</div>
-					<div className="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					<div className="col-12 col-sm-7 col-md-7 col-lg-7">
 						<p className="more-sites half">
 							<a href="https://www.laie.es/on-som" title="">On som?</a>
 							<a href="https://www.laie.es/contacte" title="" rel="nofollow">Contacte</a>
@@ -33,7 +33,7 @@ class MenuBottom extends React.Component {
 							<a href="https://www.laie.es/politica-de-privacidad" title="" rel="nofollow">Política de privacitat</a>
 						</p>
 					</div>
-					<div className="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+					<div className="col-12 col-sm-3 col-md-3 col-lg-3">
 						<p className="more-sites">
 							Carrer de Pau Claris, 85<br />
 							08010 Barcelona<br />

@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import logolaie from './logo-laie.png';
 import cerca from './cerca.png';
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
@@ -34,49 +35,31 @@ class Menu extends React.Component {
   render() {
   	return (
       <header className="container-fluid">
-        <nav role="container navigation" className="main-nav" id="main-nav">
-          <div className="top-nav-logo">
-            <Link to="/"><img src={logolaie} alt="Laie logo" /></Link>
-          </div>
-          <ul id="main-nav-list">
-            <li>
-							<a href="/#" onClick={this.showMenu} >Llibres</a>
-              {
-                this.state.showMenu
-                  ? (
-                    <div
-                      className="divider"
-                      ref={(element) => {
-                        this.dropdownMenu = element;
-                      }}
-                    >
-                      <div className="arrow-up"></div>
-                    </div>
-                  )
-                  : (
-                    null
-                  )
-              }
-            </li>
-            <li>
-              <Link className="dropbtn" to="/objectes">Objectes</Link>
-            </li>
-            <li>
-              <Link className="dropbtn" to="/objecte">Agenda</Link>
-            </li>
-            <li>
-              <a href="/#">Magazine</a>
-            </li>
-            <li>
-              <a href="/#">On som</a>
-            </li>
-            <li>
-              <a href="/#">Qui som</a>
-            </li>
-          </ul>
-        </nav>
+
+          <Navbar collapseOnSelect expand="lg" variant="dark" className="container main-nav">
+          <Navbar.Brand href="/"><img src={logolaie} alt="Laie logo" /></Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav.Link href="/#" onClick={this.showMenu}>Llibres</Nav.Link>
+              <Nav.Link href="/objectes">Objectes</Nav.Link>
+              <Nav.Link href="/objecte">Agenda</Nav.Link>
+              <Nav.Link href="/#">Magazine</Nav.Link>
+              <Nav.Link href="/#">On Som</Nav.Link>
+              <Nav.Link href="/#">Qui Som</Nav.Link>
+              {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+              </NavDropdown> */}
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+
         <div className="header-bottom">
-        <div className="container">
+          <div className="container">
           <div className="wrap">
             <ul className="options">
               <li className="item">

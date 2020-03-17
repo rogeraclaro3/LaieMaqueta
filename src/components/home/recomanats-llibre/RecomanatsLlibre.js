@@ -19,7 +19,7 @@ class Recomanats_llibreries extends React.Component {
       slidesToScroll: 5,
       responsive: [
         {
-          breakpoint: 1240,
+          breakpoint: 1280,
           settings: {
             slidesToShow: 4,
             slidesToScroll: 4,
@@ -27,26 +27,27 @@ class Recomanats_llibreries extends React.Component {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 992,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 3,
+            slidesToScroll: 3,
           }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        }
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				}
       ]
-    };
+		};
+
     return (
         <div className="container separav60">
         <div className="row">
-					<div className="col-lg-6"><img src={Icona} className="icona-align" alt="icona"/><h4>Els llibreters de Laie recomanen</h4></div>
-					<div className="col-lg-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
+					<div className="col-9 col-md-9 col-xl-6"><img src={Icona} className="icona-align" alt="icona"/><h4>Els llibreters de Laie recomanen</h4></div>
+					<div className="col-3 col-md-3 col-xl-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
 				</div>
         <Slider {...settings} className='carrussel'>
           <div>

@@ -93,7 +93,7 @@ a:hover {
 }
 
 .main-nav {
-  max-width: 1080px;
+  /*max-width: 1080px;*/
   margin: 0 auto;
   height: inherit;
 }
@@ -112,6 +112,8 @@ a:hover {
   align-items: center;
   list-style: none;
   height: 100%;
+  position: absolute;
+  right: 0;
 }
 
 .main-nav ul li {
@@ -122,10 +124,27 @@ a:hover {
   border-left: none;
 }
 
+.navbar-nav a {
+  border-left: 1px solid #ccc;
+  color: #fff !important;
+  font-family: 'Poppins Regular' !important;
+  font-size: 14px !important;
+  padding: 0 2rem 0 2rem !important;
+}
+
+.navbar-nav a:first-child {
+  border-left: none;
+}
+
+.navbar-nav {
+  background-color: #002343;
+  z-index: 1;
+  position: relative;
+}
+
 .main-nav a {
-  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  padding: .3em 30px;
+  /*padding: .3em 30px;*/
   font-size: 14px;
   max-width: 140px;
   font-weight: bold;
@@ -270,6 +289,8 @@ li.dropdown {
   padding: 0 15px 0 15px;
 }
 
+/***** Slider Home *****/
+
 .slPrincipal .slick-list {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -342,6 +363,19 @@ li.dropdown {
 .slick-slide {
   text-align: -webkit-center !important;
 }
+
+.slick-slide img {
+  /* display: block; */
+  width: 100%;
+  height: auto;
+}
+
+.slide_background {
+  background-size: contain;
+  height: inherit;
+}
+
+/******* Regala *******/
 
 .regala_card_llibre {
   display: inline-block;
@@ -720,7 +754,7 @@ input.bcerca {
   flex-direction: row;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  margin-left: 15px;
+  /*margin-left: 15px;*/
 }
 
 ul.options {
@@ -1812,7 +1846,7 @@ input[type=radio] {
 }
 
 .espai_usuari .seccio {
-  border-bottom:  1px solid #F8F9FB;
+  border-bottom: 1px solid #F8F9FB;
   font-size: 14px;
   padding: 1rem;
 }
@@ -1839,9 +1873,9 @@ input[type=radio] {
 }
 
 .espai_usuari .icona_menu {
-    font-size: 25px;
-    display: inline-block;
-    width: 40px;
+  font-size: 25px;
+  display: inline-block;
+  width: 40px;
 }
 
 .espai_usuari .gira {
@@ -1855,6 +1889,7 @@ input[type=radio] {
   border: 2px solid #002343;
   color: #002343;
 }
+
 .espai_usuari .btn-buit:hover {
   color: #fff;
 }
@@ -1891,7 +1926,9 @@ input[type=radio] {
   padding-bottom: 2rem;
 }
 
-.usuari span.titol_camp, .usuari .nova .form-label, .usuari .edita .form-label {
+.usuari span.titol_camp,
+.usuari .nova .form-label,
+.usuari .edita .form-label {
   display: block;
   font-family: 'Poppins Bold';
   font-size: 14px;
@@ -1902,9 +1939,9 @@ input[type=radio] {
 }
 
 .espai_usuari .card {
-    padding: 0;
-    border: 0;
-    display: block;
+  padding: 0;
+  border: 0;
+  display: block;
 }
 
 .espai_usuari .favorits {
@@ -1912,24 +1949,114 @@ input[type=radio] {
 }
 
 .espai_usuari .usuari .favorits .btn-primary {
-    width: 100%;
-    margin-top: 1rem;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .espai_usuari .usuari .card-title.h5 {
-    font-family: 'Poppins Black';
-    font-size: 14px;
-    text-transform: uppercase;
-    text-align: left;
+  font-family: 'Poppins Black';
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .espai_usuari .usuari .favorits_card .card-text {
-    font-family: 'Poppins Regular';
-    font-size: 16px;
-    text-align: right;
-    color: #f49331;
+  font-family: 'Poppins Regular';
+  font-size: 16px;
+  text-align: right;
+  color: #f49331;
 }
 
 .espai_usuari .usuari p.card-text {
-    margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/***** Media queries *****/
+
+@media screen and (max-width: 1024px) {
+  .slide_slPrincipal .sl_titol {
+    font-size: 36px;
+    line-height: 1em;
+  }
+
+  .slide_slPrincipal .sl_subtitol {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .slick-prev {
+    left: 0;
+    z-index: 1;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .navbar-nav a {
+    border-left: 0;
+    color: #fff !important;
+    font-family: 'Poppins Regular' !important;
+    font-size: 14px !important;
+    padding: .5rem !important;
+  }
+
+  .navbar-nav {
+    background-color: #002343;
+    z-index: 1;
+    position: relative;
+    margin-top: 18px;
+  }
+
+  .full-bleed {
+    width: 100vw;
+    margin-left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  .slide_slPrincipal .sl_titol {
+    font-size: 26px;
+    line-height: 1em;
+    padding-top: 1rem;
+  }
+
+  .slick-prev {
+    left: 15px !important;
+    z-index: 1 !important;
+  }
+
+  .slick-next {
+    right: 15px !important;
+    z-index: 1 !important;
+  }
+
+  .hidden-xs {
+    display: none;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h4 a {
+    font-size: 12px;
+  }
+
+  .recom_card {
+    margin-bottom: 2rem;
+  }
+
+  .slick-slider {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }

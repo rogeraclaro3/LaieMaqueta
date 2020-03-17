@@ -9,44 +9,45 @@ import Icona from '../icon01.png';
 
 class Recomanats_llibreries extends React.Component {
 
-  render() {
-    const settings = {
-      dots: false,
-      infinite: true,
-      speed: 500,
+	render() {
+		const settings = {
+			dots: false,
+			infinite: true,
+			speed: 500,
 			slidesToShow: 5,
 			swipeToSlide: true,
-      slidesToScroll: 5,
-      responsive: [
-        {
-          breakpoint: 1240,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            infinite: true,
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        }
-      ]
-    };
+			slidesToScroll: 5,
+			responsive: [
+				{
+					breakpoint: 1280,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 4,
+						infinite: true,
+					}
+				},
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				}
+			]
+		};
+
     return (
         <div className="container separav60">
         <div className="row">
-					<div className="col-lg-6"><img src={Icona} className="icona-align" alt="icona" /><h4>Novetats en llibres</h4></div>
-					<div className="col-lg-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
+					<div className="col-9 col-md-9 col-xl-6"><img src={Icona} className="icona-align" alt="icona" /><h4>Novetats en llibres</h4></div>
+					<div className="col-3 col-md-3 col-xl-6 text-right"><h4><a href="#">Veure'ls tots</a></h4></div>
 				</div>
         <Slider {...settings} className='carrussel'>
           <div>
